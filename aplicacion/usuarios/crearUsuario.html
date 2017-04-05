@@ -1,0 +1,162 @@
+<div class="panel">
+  <div class="panel-body container-fluid">
+      <form id="frmCrearUsuario" role="form" class="width-full text-left">
+        <div class="col-md-8 form-group">
+          <h4 class="example-title">Nombres y Apellidos</h4>
+          <div class="input-group input-group-icon">
+                  <span class="input-group-addon">
+                    <span class="icon fa-credit-card" aria-hidden="true"></span>
+                  </span>
+                  <input id="txtCrearUsuario_nombre" type="text" class="form-control guardar" placeholder="Nombre" required>
+                </div>
+      </div>
+      <div class="col-md-8 form-group">
+          <h4 class="example-title">Correo Electrónico</h4>
+          <div class="input-group input-group-icon">
+                  <span class="input-group-addon">
+                    <span class="icon fa-envelope" aria-hidden="true"></span>
+                  </span>
+                  <input id="txtCrearUsuario_correo" type="text" class="form-control guardar" placeholder="Correo" required>
+                </div>
+      </div>
+      <div class="col-md-6 form-group">
+          <h4 class="example-title">Cargo</h4>
+          <div class="input-group input-group-icon">
+                  <span class="input-group-addon">
+                    <span class="icon fa-coffee" aria-hidden="true"></span>
+                  </span>
+                  <input id="txtCrearUsuario_cargo" type="text" class="form-control guardar" placeholder="Cargo" required>
+                </div>
+      </div>
+      <div class="col-md-6 form-group">
+          <h4 class="example-title">Perfil</h4>
+          <div class="input-group input-group-icon">
+                  <span class="input-group-addon">
+                    <span class="icon fa-user-secret" aria-hidden="true"></span>
+                  </span>
+                  <select id="txtCrearUsuario_perfil" class="form-control guardar" placeholder="Cargo" required>
+                    <option value="3">Usuario</option>
+                    <option value="2">Coordinador</option>
+                    <option value="1">Administrador</option>
+                  </select>
+                </div>
+      </div>
+      <div class="col-md-6">
+                <div class="col-md-12 form-group">
+                  <h4 class="example-title">Usuario</h4>
+                    <div class="input-group input-group-icon">
+                      <span class="input-group-addon">
+                        <span class="icon fa-user" aria-hidden="true"></span>
+                      </span>
+                      <input id="txtCrearUsuario_usuario" type="text" class="form-control guardar" placeholder="Usuario" required>
+          </div>
+                </div>
+                <div class="col-md-12 form-group">
+                  <h5 class="example-title">Contraseña</h5>
+                    <div class="input-group input-group-icon">
+                      <span class="input-group-addon">
+                        <span class="icon fa-asterisk" aria-hidden="true"></span>
+                      </span>
+                      <input id="txtCrearUsuario_clave" type="password" class="form-control guardar" placeholder="Contraseña" required>
+          </div>
+                </div>
+                <div class="col-md-12 form-group">
+                  <h5 class="example-title">Confirmar contraseña</h5>
+                    <div class="input-group input-group-icon">
+                      <span class="input-group-addon">
+                        <span class="icon fa-asterisk" aria-hidden="true"></span>
+                      </span>
+                      <input id="txtCrearUsuario_clave2" type="password" class="form-control guardar" placeholder="Contraseña" required>
+          </div>
+                </div>
+            </div>
+            <div class="col-md-8 form-group">
+                <h4 class="example-title">Empresa</h4>
+                  <div class="input-group input-group-icon">
+                    <span class="input-group-addon">
+                      <span class="icon fa-truck" aria-hidden="true"></span>
+                    </span>
+                    <select id="txtCrearUsuario_empresa" class="form-control guardar" placeholder="Empresa" required>
+                      <!--<option value="1">WSP Panama</option>-->
+                      <option value="2">WSP Colombia</option>
+                    </select>
+        </div>
+              </div>
+              
+                <div class="form-group col-md-12 font-size-20 text-right">
+                    <button type="submit" class="btn btn-success margin-horizontal-50"><i class="icon fa-save"></i>Guardar</button>
+                    <button type="button" id="btnCrearUsuario_Nuevo" class="btn btn-danger margin-horizontal-50"><i class="icon fa-trash"></i>Nuevo</button>
+                  </div>
+              
+                
+      </form>
+  
+  </div>
+</div>
+
+<script type="text/javascript">
+  //$(document).on("ready", informacionEstructual);
+crearUsuario();
+
+function crearUsuario()
+{
+  $("#btnCrearUsuario_Nuevo").on("click", btnCrearUsuario_Nuevo_Click);
+
+  $("#frmCrearUsuario").on("submit", function(evento)
+  {
+    evento.preventDefault();
+    $("#frmCrearUsuario").generarDatosEnvio("txtCrearUsuario_", function(datos)
+    {
+      if ($("#txtCrearUsuario_perfil").val() == "")
+      {
+        Mensaje("Error", "Por favor selecciona el Perfil");
+        $("#txtCrearUsuario_perfil").focus();
+      } else
+      {
+        if ($("#txtCrearUsuario_empresa").val() == "")
+        {
+          Mensaje("Error", "Por favor selecciona la Empresa");
+          $("#txtCrearUsuario_empresa").focus();
+        } else
+        {
+          if ($("#txtCrearUsuario_clave").val() != $("#txtCrearUsuario_clave2").val())
+          {
+            Mensaje("Error", "Las claves no coinciden");
+            $("#txtCrearUsuario_clave").focus();
+          } else
+          {
+
+            $.post("../server/php/proyecto/crearUsuario.php",
+            {datos: datos}, function(data, textStatus, xhr)
+            {
+              if (data == 1)
+              {
+                Mensaje("Ok", "El Usuario ha sido almacenado.");    
+                $("#frmCrearUsuario")[0].reset();
+                
+              } else
+              {
+                Mensaje("Error", data);    
+              }
+            }).always(function() 
+            {
+              //Cuando Finaliza
+            }).fail(function() {
+              Mensaje("Error", "No fue posible almacenar el Usuario, por favor intenta nuevamente.");
+            });
+          }
+        }
+      }
+    });
+  });
+}
+
+function btnCrearUsuario_Nuevo_Click()
+{
+  var r = confirm("Los cambios realizados no se guardaran, \n ¿Desea continuar?");
+  if (r == true) 
+  {
+    $("#frmCrearUsuario")[0].reset();     
+  }   
+}
+</script>

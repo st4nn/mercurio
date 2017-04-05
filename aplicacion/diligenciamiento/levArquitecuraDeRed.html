@@ -1,0 +1,45 @@
+  <!-- Page -->
+<div class="panel">
+  <div class="panel-body">
+    <div class="col-md-12 blue-grey-600">
+      <div class="col-md-12">
+        <button id="btnDiligenciar_LevArquitecturaDeRed_MostrarSectores" class="btn btn-warning hide"><i class="icon fa-eye"></i> Mostrar Sectores</button>
+      </div>
+      <div class="col-md-12">
+        <div id="cntDiligenciar_LevArquitecturaDeRed_Sectores" class="col-md-3">
+          <h4 class="example-title">Sectores</h4>
+          <input type="hidden" id="txtDiligenciar_LevArquitecturaDeRed_Sectores" class="guardar">
+          <div>
+            <div class="btn-group" aria-label="Default button group" role="group">
+              <button type="button" id="btnDiligenciar_LevArquitecturaDeRed_SectoresTodas" class="btn btn-outline btn-default">Todos</button>
+              <button type="button" id="btnDiligenciar_LevArquitecturaDeRed_SectoresNinguna" class="btn btn-outline btn-default">Ninguno</button>
+            </div>
+          </div>
+          <div id="cntDiligenciar_LevArquitecturaDeRed_ListaSectores">
+            <button id="btnDiligenciar_LevArquitecturaDeRed_OcultarSectores" class="btn btn-warning"><i class="icon fa-eye-slash"></i> Ocultar Sectores</button>
+          </div>
+        </div>
+        <div id="cntDiligenciar_LevArquitecturaDeRed_Proyectos" class="col-md-9">
+          <div class="col-md-12">
+            <h4 class="example-title">Proyectos</h4>
+            <div class="input-search pull-right">
+              <input type="text" id="txtDiligenciar_LevArquitecturaDeRed_Filtrar" class="form-control" placeholder="Filtrar...">
+            </div>
+          </div>
+          <br><br>
+          <ul id="cntDiligenciar_LevArquitecturaDeRed_ListaProyectos" class="list-group list-group-dividered list-group-full margin-top-50">
+            
+          </ul>         
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <!-- End Page -->
+<script type="text/javascript">
+    jQuery(document).ready(function() {       
+        levArquitecturaDeRed();
+      });
+
+</script>

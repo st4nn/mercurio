@@ -1,0 +1,675 @@
+  <!-- Page -->
+<div class="panel">
+  <div class="panel-body">
+    <div class="col-md-12 blue-grey-600 hide">
+      <button class="btn btn-warning btn-block text-left margin-5"> Levantamiento de Información</button>
+      <button class="btn btn-warning btn-block text-left margin-5"> Levantamiento para Electrificación</button>
+      <button class="btn btn-warning btn-block text-left margin-5"> Arquitectura de Red</button>
+    </div>
+    <input type="hidden" id="txtLevantamiento_idProyecto">
+    <form id="frmLevantamiento">
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Punto GPS</h4>
+        <div class="form-group">
+          <h1 id="lblLevantamiento_CodPunto">001</h1>
+          <input type="hidden" id="txtLevantamiento_CodPoste" class="guardar">
+          <button id="btnLevantamiento_Tramo" class="btn btn-success btn-block text-left margin-5"> Diligenciar Tramo</button>
+          <h3><small>Codigo del Poste anterior:</small> <strong id="lblLevantamiento_TramoAnterior"></strong></h3>
+          <input type="hidden" id ="txtLevantamiento_Tramo" class="guardar">
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Coordenadas</h4>
+        <div class="form-group">
+          <label for="txtLevantamiento_CoordX">X</label>
+          <input type="text" id="txtLevantamiento_CoordX" class="form-control guardar" required>
+          <label for="txtLevantamiento_CoordY">Y</label>
+          <input type="text" id="txtLevantamiento_CoordY" class="form-control guardar" required>
+          <label for="txtLevantamiento_CoordQ">Calidad</label>
+          <input type="text" id="txtLevantamiento_CoordQ" class="form-control guardar" required>
+          <br>
+          <button id="btnFormLevantamiento_TomarCoordenadas" type="button" class="btn btn-success btn-block">Tomar Coordenadas</button>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12  margin-bottom-15">
+        <h4 class="example-title">Amarre de Fotos</h4>
+        <div class="form-group">
+          <input type="text" id="txtLevantamiento_Amarre" class="form-control guardar">
+        </div>
+      </div>
+      <div class="example-wrap hide">
+        <div class="col-xs-6 col-md-6">
+          <button id="btnLevantamiento_Foto" class="btn btn-info btn-lg btn-block height-50"><i class="icon fa-camera"></i> Foto</button>            
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <button id="btnLevantamiento_Galeria" class="btn btn-info btn-lg btn-block height-50"><i class="icon fa-image"></i> Galería</button>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Capacidad del Poste</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_CapacidadPoste" type="text" class="form-control guardar">
+            <option value='1'>9m/300daN</option>
+            <option value='2'>9m/500daN</option>
+            <option value='3'>9m/800daN</option>
+            <option value='4'>12m/300daN</option>
+            <option value='5'>12m/500daN</option>
+            <option value='6'>12m/800daN</option>
+            <option value='7'>12m/1250daN</option>
+            <option value='8'>12m/2000daN</option>
+            <option value='9'>12m/3000daN</option>
+            <option value='10'>14m/500daN</option>
+            <option value='11'>14m/800daN</option>
+            <option value='12'>14m/1250daN</option>
+            <option value='13'>14m/2000daN</option>
+            <option value='14'>14m/3000daN</option>
+            <option value='15'>8m/510kgf</option>
+            <option value='16'>8m/750kgf</option>
+            <option value='17'>8m/1050kgf</option>
+            <option value='18'>9m/510kgf</option>
+            <option value='19'>9m/750kgf</option>
+            <option value='20'>10m/510kgf</option>
+            <option value='21'>10m/750kgf</option>
+            <option value='22'>10m/1050kgf</option>
+            <option value='23'>11m/510kgf</option>
+            <option value='24'>11m/750kgf</option>
+            <option value='25'>12m/510kgf</option>
+            <option value='26'>12m/750kgf</option>
+            <option value='27'>12m/1050kgf</option>
+            <option value='28'>12m/1350kgf</option>
+            <option value='29'>12m/1500kgf</option>
+            <option value='30'>12m/1750kgf</option>
+            <option value='31'>14m/750kgf</option>
+            <option value='32'>14m/1050kgf</option>
+            <option value='33'>14m/1350kgf</option>
+            <option value='34'>14m/1500kgf</option>
+            <option value='35'>15m/750kgf</option>
+            <option value='36'>15m/1050kgf</option>
+            <option value='37'>18m/1200kgf</option>
+            <option value='38'>18m/1500kgf</option>
+            <option value='39'>18m/1900kgf</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Material Poste</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_MaterialPoste" type="text" class="form-control guardar">
+            <option value='1'>HORMIGON</option>
+            <option value='2'>METALICO MT</option>
+            <option value='3'>METALICO BT</option>
+            <option value='4'>MADERA</option>
+            <option value='5'>HORMIGON</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Estado del Poste</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_EstadoPoste" type="text" class="form-control guardar">
+            <option value='1'>BUENO</option>
+            <option value='2'>MALO</option>
+            <option value='3'>DESAPLOMADO</option>
+          </select>
+        </div>
+      </div>
+      <h3 class="example-title">Crucetas</h3>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Crucetas</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Crucetas" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Material Cruceta</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_MaterialCruceta" type="text" class="form-control guardar">
+            <option value='1'>MADERA</option>
+            <option value='2'>METALICO</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Doble</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Doble" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Sencilla</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Sencilla" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Aux de Protecciones</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_AuxProtecciones" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+          </select>
+        </div>
+      </div>
+      <h4 class="example-title">AISLAMIENTO (Tipo Poste)</h4>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Porcelana Aislamiento T.P.</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_PorcelanaAislamientoTP" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+            <option value='13'>13</option>
+            <option value='14'>14</option>
+            <option value='15'>15</option>
+            <option value='16'>16</option>
+            <option value='17'>17</option>
+            <option value='18'>18</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Polimerico Aislamiento T.P.</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_PolimericoAislamientoTP" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+            <option value='13'>13</option>
+            <option value='14'>14</option>
+            <option value='15'>15</option>
+            <option value='16'>16</option>
+            <option value='17'>17</option>
+            <option value='18'>18</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Hibrido</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Hibrido" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+          </select>
+        </div>
+      </div>
+      <h4 class="example-title">AISLAMIENTO (Cadenas A)</h4>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Porcelana</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Porcelana" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+            <option value='13'>13</option>
+            <option value='14'>14</option>
+            <option value='15'>15</option>
+            <option value='16'>16</option>
+            <option value='17'>17</option>
+            <option value='18'>18</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Polimerico</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Polimerico" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+            <option value='13'>13</option>
+            <option value='14'>14</option>
+            <option value='15'>15</option>
+            <option value='16'>16</option>
+            <option value='17'>17</option>
+            <option value='18'>18</option>
+          </select>
+        </div>
+      </div>
+      <h3 class="example-title">TRANSFORMADORES</h3>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h3 class="example-title">(1, 2 o 3 fases)</h3>
+        <div class="form-group">
+          <select id="txtLevantamiento_Transformadores" type="text" class="form-control guardar">
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Capacidad Trafo</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_CapacidadTrafo" type="text" class="form-control guardar">
+            <option value='1'>5Kva</option>
+            <option value='2'>10Kva</option>
+            <option value='3'>15Kva</option>
+            <option value='4'>25Kva</option>
+            <option value='5'>37,5Kva</option>
+            <option value='6'>50Kva</option>
+            <option value='7'>75Kva</option>
+            <option value='8'>112,5Kva</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">CT</h4>
+        <div class="form-group">
+          <input id="txtLevantamiento_CT" type="text" class="form-control guardar">
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">MT</h4>
+        <div class="form-group">
+          <input id="txtLevantamiento_MT" type="text" class="form-control guardar">
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Cortacircuitos</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Cortacircuitos" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Pararrayos</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Pararrayos" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Derivaciones Subterráneas</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_DerivacionesSubterraneas" type="text" class="form-control guardar">
+            <option value='0'></option>
+            <option value='1'>1 MT</option>
+            <option value='2'>2 MT</option>
+            <option value='3'>1 BT</option>
+            <option value='4'>2 BT</option>
+            <option value='5'>3 BT</option>
+          </select>
+        </div>
+      </div>
+      <h3 class="example-title">Perchas</h3>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Perchas</h4>
+        <div class="form-group">
+          <input id="txtLevantamiento_Perchas" type="text" class="form-control guardar">
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">1 Puesto</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_1Puesto" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+            <option value='13'>13</option>
+            <option value='14'>14</option>
+            <option value='15'>15</option>
+            <option value='16'>16</option>
+            <option value='17'>17</option>
+            <option value='18'>18</option>
+            <option value='19'>19</option>
+            <option value='20'>20</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">2 Puestos</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_2Puestos" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">3 Puestos</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_3Puestos" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">4 Puestos</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_4Puestos" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">5 Puestos</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_5Puestos" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Aislador Carrete</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_AisladorCarrete" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+            <option value='9'>9</option>
+            <option value='10'>10</option>
+            <option value='11'>11</option>
+            <option value='12'>12</option>
+            <option value='13'>13</option>
+            <option value='14'>14</option>
+            <option value='15'>15</option>
+            <option value='16'>16</option>
+            <option value='17'>17</option>
+            <option value='18'>18</option>
+            <option value='19'>19</option>
+            <option value='20'>20</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Retenidas</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Retenidas" type="text" class="form-control guardar">
+            <option value='0'></option>
+            <option value='1'>A TIERRA</option>
+            <option value='2'>AEREA</option>
+            <option value='3'>VERTICAL</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Caja de Abonados</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_CajaAbonados" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+          </select>
+        </div>
+      </div>
+      <h3 class="example-title">ELEMENTOS MT</h3>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">ELEMENTOS MT</h4>
+        <div class="form-group">
+          <input id="txtLevantamiento_ElementosMT" type="text" class="form-control guardar">
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Reconectador</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Reconectador" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Switch</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Switch" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">TC</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_TC" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">TP</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_TP" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Banco de Condensadores</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_BancoCondensadores" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Puestas a Tierra</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_PuestasTierra" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Lampara</h4>
+        <div class="form-group">
+          <select id="txtLevantamiento_Lampara" type="text" class="form-control guardar">
+            <option value='0'>0</option>
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Otros Servicios</h4>
+        <div class="form-group">
+          <input id="txtLevantamiento_OtrosServicios" type="text" class="form-control guardar">
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Observaciones</h4>
+        <div class="form-group">
+          <textarea id="txtLevantamiento_Observaciones" type="text" class="form-control guardar"></textarea>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <button id="btnLevantamiento_Guardar" type="submit" class="btn btn-success text-left"><i class="icon fa-floppy-o"></i> Guardar</button>
+        <button id="btnLevantamiento_NuevoProducto" class="btn btn-danger text-left"><i class="icon fa-plus"></i> Nuevo Punto</button>
+      </div>
+    </form>
+  </div>
+</div>
+    <!-- End Page -->
+<script type="text/javascript">
+    jQuery(document).ready(function() {       
+        Levantamiento();
+
+      });
+
+</script>

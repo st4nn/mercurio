@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                  <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+                  <Document>
+                    <name>1-48-1</name>
+                    <Style id="icoPoste">
+                      <IconStyle>
+                        <scale>1</scale>
+                        <Icon>
+                          <href>http://orion.wsppb-latam.com/assets/images/icons/poste.png</href>
+                        </Icon>
+                        <hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+                      </IconStyle>
+                    </Style>
+                    <Style id="icoLine">
+                      <LineStyle>
+                        <color>ff00264c</color>
+                        <width>5</width>
+                      </LineStyle>
+                    </Style>
+                    <Folder>
+                      <name>1-48-1</name>
+                      <open>1</open><Placemark>
+                      <name>001</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>001</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.608721654839785</i></p><p><b>CoordY: </b><i>-74.076465703547</i></p><p><b>CoordQ: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.076465703547</longitude>
+                        <latitude>4.608721654839785</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.076465703547,4.608721654839785,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>002</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>002</i></p><p><b>Tramo: </b><i>001</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.608920833282488</i></p><p><b>CoordY: </b><i>-74.07677013427019</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>40.361</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.07677013427019</longitude>
+                        <latitude>4.608920833282488</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07677013427019,4.608920833282488,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 002 - 001</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.076465703547,4.608721654839785,0 -74.07677013427019,4.608920833282488,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>003</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>003</i></p><p><b>Tramo: </b><i>002</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.60905484425027</i></p><p><b>CoordY: </b><i>-74.07697465270758</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>27.127</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.07697465270758</longitude>
+                        <latitude>4.60905484425027</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07697465270758,4.60905484425027,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 003 - 002</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.07677013427019,4.608920833282488,0 -74.07697465270758,4.60905484425027,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>004</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>004</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.609202557058306</i></p><p><b>CoordY: </b><i>-74.0771945938468</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>29.394</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.0771945938468</longitude>
+                        <latitude>4.609202557058306</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.0771945938468,4.609202557058306,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>005</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>005</i></p><p><b>Tramo: </b><i>004</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.60935862462982</i></p><p><b>CoordY: </b><i>-74.07742526382208</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>30.900</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.07742526382208</longitude>
+                        <latitude>4.60935862462982</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07742526382208,4.60935862462982,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 005 - 004</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.0771945938468,4.609202557058306,0 -74.07742526382208,4.60935862462982,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>006</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>006</i></p><p><b>Tramo: </b><i>005</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.609512018633518</i></p><p><b>CoordY: </b><i>-74.07763581722975</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>28.906</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.07763581722975</longitude>
+                        <latitude>4.609512018633518</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07763581722975,4.609512018633518,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 006 - 005</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.07742526382208,4.60935862462982,0 -74.07763581722975,4.609512018633518,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>007</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>007</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.6095959007435505</i></p><p><b>CoordY: </b><i>-74.07775316387415</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>16.005</i></p><p><b>Circuitos_AP: </b><i>1</i></p><p><b>Observaciones: </b><i>Costado sur</i></p></description><LookAt>
+                        <longitude>-74.07775316387415</longitude>
+                        <latitude>4.6095959007435505</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07775316387415,4.6095959007435505,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>008</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>008</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.609798086665264</i></p><p><b>CoordY: </b><i>-74.07807067036629</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>41.759</i></p><p><b>Circuitos_AP: </b><i>1</i></p><p><b>Observaciones: </b><i>Costado sur</i></p></description><LookAt>
+                        <longitude>-74.07807067036629</longitude>
+                        <latitude>4.609798086665264</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07807067036629,4.609798086665264,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>009</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>009</i></p><p><b>Tramo: </b><i>008</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.610086828113227</i></p><p><b>CoordY: </b><i>-74.07849378883839</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>56.834</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.07849378883839</longitude>
+                        <latitude>4.610086828113227</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07849378883839,4.610086828113227,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 009 - 008</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.07807067036629,4.609798086665264,0 -74.07849378883839,4.610086828113227,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>010</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>010</i></p><p><b>Tramo: </b><i>009</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.610143306461442</i></p><p><b>CoordY: </b><i>-74.07857894897461</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>11.337</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.07857894897461</longitude>
+                        <latitude>4.610143306461442</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07857894897461,4.610143306461442,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 010 - 009</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.07849378883839,4.610086828113227,0 -74.07857894897461,4.610143306461442,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>011</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>011</i></p><p><b>Tramo: </b><i>010</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.610353178627282</i></p><p><b>CoordY: </b><i>-74.07889042049646</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>41.670</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.07889042049646</longitude>
+                        <latitude>4.610353178627282</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07889042049646,4.610353178627282,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 011 - 010</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.07857894897461,4.610143306461442,0 -74.07889042049646,4.610353178627282,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>013</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>013</i></p><p><b>Tramo: </b><i>012</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.610591456982467</i></p><p><b>CoordY: </b><i>-74.0792290493846</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>17.614</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.0792290493846</longitude>
+                        <latitude>4.610591456982467</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.0792290493846,4.610591456982467,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 013 - 012</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                             -74.0792290493846,4.610591456982467,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>012</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>012</i></p><p><b>Tramo: </b><i>011</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.610503898886491</i></p><p><b>CoordY: </b><i>-74.07909661531448</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>28.340</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.07909661531448</longitude>
+                        <latitude>4.610503898886491</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07909661531448,4.610503898886491,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 012 - 011</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.07889042049646,4.610353178627282,0 -74.07909661531448,4.610503898886491,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>014</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>014</i></p><p><b>Tramo: </b><i>013</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.610740840426658</i></p><p><b>CoordY: </b><i>-74.07943323254585</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>28.072</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.07943323254585</longitude>
+                        <latitude>4.610740840426658</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07943323254585,4.610740840426658,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 014 - 013</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.0792290493846,4.610591456982467,0 -74.07943323254585,4.610740840426658,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>015</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>015</i></p><p><b>Tramo: </b><i>014</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.611021226716971</i></p><p><b>CoordY: </b><i>-74.07981645315886</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>52.689</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.07981645315886</longitude>
+                        <latitude>4.611021226716971</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07981645315886,4.611021226716971,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 015 - 014</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.07943323254585,4.610740840426658,0 -74.07981645315886,4.611021226716971,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>016</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>016</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.611039607220805</i></p><p><b>CoordY: </b><i>-74.07989356666803</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>8.788</i></p><p><b>Observaciones: </b><i>Red de bt cruza kr 18</i></p></description><LookAt>
+                        <longitude>-74.07989356666803</longitude>
+                        <latitude>4.611039607220805</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07989356666803,4.611039607220805,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>018</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>018</i></p><p><b>Tramo: </b><i>017</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.611354080858342</i></p><p><b>CoordY: </b><i>-74.08021073788404</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>41.167</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08021073788404</longitude>
+                        <latitude>4.611354080858342</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08021073788404,4.611354080858342,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 018 - 017</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                             -74.08021073788404,4.611354080858342,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>017</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>017</i></p><p><b>Tramo: </b><i>015</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.6111194788592655</i></p><p><b>CoordY: </b><i>-74.07992340624332</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>9.477</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.07992340624332</longitude>
+                        <latitude>4.6111194788592655</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.07992340624332,4.6111194788592655,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 017 - 015</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.07981645315886,4.611021226716971,0 -74.07992340624332,4.6111194788592655,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>019</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>019</i></p><p><b>Tramo: </b><i>018</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.611576986104774</i></p><p><b>CoordY: </b><i>-74.0804873406887</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>39.423</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.0804873406887</longitude>
+                        <latitude>4.611576986104774</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.0804873406887,4.611576986104774,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 019 - 018</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08021073788404,4.611354080858342,0 -74.0804873406887,4.611576986104774,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>020</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>020</i></p><p><b>Tramo: </b><i>019</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.611742410492817</i></p><p><b>CoordY: </b><i>-74.08068414777517</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>28.534</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08068414777517</longitude>
+                        <latitude>4.611742410492817</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08068414777517,4.611742410492817,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 020 - 019</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.0804873406887,4.611576986104774,0 -74.08068414777517,4.611742410492817,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>024</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>024</i></p><p><b>Tramo: </b><i>023</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.612421151366464</i></p><p><b>CoordY: </b><i>-74.08151462674141</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>58.460</i></p></description><LookAt>
+                        <longitude>-74.08151462674141</longitude>
+                        <latitude>4.612421151366464</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08151462674141,4.612421151366464,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 024 - 023</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                             -74.08151462674141,4.612421151366464,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>021</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>021</i></p><p><b>Tramo: </b><i>020</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.611844004441321</i></p><p><b>CoordY: </b><i>-74.08081088215113</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>18.026</i></p></description><LookAt>
+                        <longitude>-74.08081088215113</longitude>
+                        <latitude>4.611844004441321</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08081088215113,4.611844004441321,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 021 - 020</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08068414777517,4.611742410492817,0 -74.08081088215113,4.611844004441321,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>023</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>023</i></p><p><b>Tramo: </b><i>022</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.612085958391752</i></p><p><b>CoordY: </b><i>-74.08110827207565</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>8.481</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08110827207565</longitude>
+                        <latitude>4.612085958391752</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08110827207565,4.612085958391752,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 023 - 022</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                             -74.08110827207565,4.612085958391752,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>022</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>022</i></p><p><b>Tramo: </b><i>021</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.612039505913202</i></p><p><b>CoordY: </b><i>-74.0810475870967</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>34.071</i></p></description><LookAt>
+                        <longitude>-74.0810475870967</longitude>
+                        <latitude>4.612039505913202</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.0810475870967,4.612039505913202,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 022 - 021</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08081088215113,4.611844004441321,0 -74.0810475870967,4.612039505913202,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>025</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>025</i></p><p><b>Tramo: </b><i>024</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.612743310766349</i></p><p><b>CoordY: </b><i>-74.08190086483955</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>55.820</i></p></description><LookAt>
+                        <longitude>-74.08190086483955</longitude>
+                        <latitude>4.612743310766349</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08190086483955,4.612743310766349,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 025 - 024</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08151462674141,4.612421151366464,0 -74.08190086483955,4.612743310766349,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>026</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>026</i></p><p><b>Tramo: </b><i>025</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.612993619161832</i></p><p><b>CoordY: </b><i>-74.08220462501049</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>43.682</i></p></description><LookAt>
+                        <longitude>-74.08220462501049</longitude>
+                        <latitude>4.612993619161832</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08220462501049,4.612993619161832,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 026 - 025</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08190086483955,4.612743310766349,0 -74.08220462501049,4.612993619161832,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>027</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>027</i></p><p><b>Tramo: </b><i>026</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.613286703779791</i></p><p><b>CoordY: </b><i>-74.08255331218243</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>50.553</i></p></description><LookAt>
+                        <longitude>-74.08255331218243</longitude>
+                        <latitude>4.613286703779791</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08255331218243,4.613286703779791,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 027 - 026</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08220462501049,4.612993619161832,0 -74.08255331218243,4.613286703779791,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>028</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>028</i></p><p><b>Tramo: </b><i>027</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.613592821678056</i></p><p><b>CoordY: </b><i>-74.08293418586254</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>54.228</i></p></description><LookAt>
+                        <longitude>-74.08293418586254</longitude>
+                        <latitude>4.613592821678056</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08293418586254,4.613592821678056,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 028 - 027</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08255331218243,4.613286703779791,0 -74.08293418586254,4.613592821678056,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>029</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>029</i></p><p><b>Tramo: </b><i>028</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.613924672045302</i></p><p><b>CoordY: </b><i>-74.08333886414766</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>58.081</i></p></description><LookAt>
+                        <longitude>-74.08333886414766</longitude>
+                        <latitude>4.613924672045302</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08333886414766,4.613924672045302,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 029 - 028</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08293418586254,4.613592821678056,0 -74.08333886414766,4.613924672045302,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>030</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>030</i></p><p><b>Tramo: </b><i>029</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.614183334761745</i></p><p><b>CoordY: </b><i>-74.08366173505783</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>45.911</i></p></description><LookAt>
+                        <longitude>-74.08366173505783</longitude>
+                        <latitude>4.614183334761745</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08366173505783,4.614183334761745,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 030 - 029</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08333886414766,4.613924672045302,0 -74.08366173505783,4.614183334761745,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>031</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>031</i></p><p><b>Tramo: </b><i>030</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.6147815337062275</i></p><p><b>CoordY: </b><i>-74.08437620848417</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>103.418</i></p></description><LookAt>
+                        <longitude>-74.08437620848417</longitude>
+                        <latitude>4.6147815337062275</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08437620848417,4.6147815337062275,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 031 - 030</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08366173505783,4.614183334761745,0 -74.08437620848417,4.6147815337062275,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>032</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>032</i></p><p><b>Tramo: </b><i>031</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.614981044638736</i></p><p><b>CoordY: </b><i>-74.08461928367615</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>34.900</i></p><p><b>Circuitos_BT: </b><i>1</i></p><p><b>Cableado_Tel: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08461928367615</longitude>
+                        <latitude>4.614981044638736</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08461928367615,4.614981044638736,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 032 - 031</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08437620848417,4.6147815337062275,0 -74.08461928367615,4.614981044638736,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>033</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>033</i></p><p><b>Tramo: </b><i>032</i></p><p><b>Tipo_Elemento: </b><i>Poste_Derivacion</i></p><p><b>CoordX: </b><i>4.615068936371781</i></p><p><b>CoordY: </b><i>-74.08471316099167</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>14.275</i></p><p><b>Circuitos_BT: </b><i>1</i></p><p><b>Cableado_Tel: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08471316099167</longitude>
+                        <latitude>4.615068936371781</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08471316099167,4.615068936371781,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 033 - 032</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08461928367615,4.614981044638736,0 -74.08471316099167,4.615068936371781,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>034</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>034</i></p><p><b>Tramo: </b><i>033</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.615024155033872</i></p><p><b>CoordY: </b><i>-74.08470310270786</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>5.103</i></p><p><b>Circuitos_BT: </b><i>1</i></p><p><b>Circuitos_AP: </b><i>1</i></p><p><b>Cableado_Tel: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08470310270786</longitude>
+                        <latitude>4.615024155033872</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08470310270786,4.615024155033872,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 034 - 033</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08471316099167,4.615068936371781,0 -74.08470310270786,4.615024155033872,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>035</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>035</i></p><p><b>Tramo: </b><i>033</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.615271120735365</i></p><p><b>CoordY: </b><i>-74.08494181931019</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>38.133</i></p><p><b>Circuitos_BT: </b><i>1</i></p><p><b>Cableado_Tel: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08494181931019</longitude>
+                        <latitude>4.615271120735365</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08494181931019,4.615271120735365,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 035 - 033</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08471316099167,4.615068936371781,0 -74.08494181931019,4.615271120735365,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>036</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>036</i></p><p><b>Tramo: </b><i>035</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.615397778348672</i></p><p><b>CoordY: </b><i>-74.08508833497763</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>21.495</i></p><p><b>Circuitos_BT: </b><i>1</i></p><p><b>Cableado_Tel: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08508833497763</longitude>
+                        <latitude>4.615397778348672</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08508833497763,4.615397778348672,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 036 - 035</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08494181931019,4.615271120735365,0 -74.08508833497763,4.615397778348672,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>039</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>039</i></p><p><b>Tramo: </b><i>038</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.615470965719153</i></p><p><b>CoordY: </b><i>-74.08548764884472</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>23.806</i></p><p><b>Circuitos_BT: </b><i>1</i></p><p><b>Cableado_Tel: </b><i>1</i></p><p><b>Observaciones: </b><i>Parqueadero </i></p></description><LookAt>
+                        <longitude>-74.08548764884472</longitude>
+                        <latitude>4.615470965719153</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08548764884472,4.615470965719153,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 039 - 038</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                             -74.08548764884472,4.615470965719153,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>038</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>038</i></p><p><b>Tramo: </b><i>037</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.615319578136264</i></p><p><b>CoordY: </b><i>-74.08533576875925</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>20.803</i></p><p><b>Circuitos_BT: </b><i>1</i></p><p><b>Cableado_Tel: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08533576875925</longitude>
+                        <latitude>4.615319578136264</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08533576875925,4.615319578136264,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 038 - 037</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                             -74.08533576875925,4.615319578136264,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>037</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>037</i></p><p><b>Tramo: </b><i>036</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.615385413358398</i></p><p><b>CoordY: </b><i>-74.08516008406878</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>8.070</i></p><p><b>Circuitos_BT: </b><i>1</i></p><p><b>Cableado_Tel: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08516008406878</longitude>
+                        <latitude>4.615385413358398</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08516008406878,4.615385413358398,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 037 - 036</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08508833497763,4.615397778348672,0 -74.08516008406878,4.615385413358398,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>040</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>040</i></p><p><b>Tramo: </b><i>039</i></p><p><b>Tipo_Elemento: </b><i>Poste_Derivacion</i></p><p><b>CoordX: </b><i>4.6159364906888944</i></p><p><b>CoordY: </b><i>-74.08587958663702</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>67.576</i></p></description><LookAt>
+                        <longitude>-74.08587958663702</longitude>
+                        <latitude>4.6159364906888944</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08587958663702,4.6159364906888944,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 040 - 039</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08548764884472,4.615470965719153,0 -74.08587958663702,4.6159364906888944,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>041</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>041</i></p><p><b>Tramo: </b><i>040</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.615971914687009</i></p><p><b>CoordY: </b><i>-74.08578436821699</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>11.265</i></p><p><b>Circuitos_BT: </b><i>1</i></p><p><b>Circuitos_AP: </b><i>1</i></p><p><b>Cableado_Tel: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08578436821699</longitude>
+                        <latitude>4.615971914687009</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08578436821699,4.615971914687009,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 041 - 040</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08587958663702,4.6159364906888944,0 -74.08578436821699,4.615971914687009,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>042</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>042</i></p><p><b>Tramo: </b><i>041</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.616309445146404</i></p><p><b>CoordY: </b><i>-74.08619105815887</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>58.655</i></p></description><LookAt>
+                        <longitude>-74.08619105815887</longitude>
+                        <latitude>4.616309445146404</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08619105815887,4.616309445146404,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 042 - 041</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08578436821699,4.615971914687009,0 -74.08619105815887,4.616309445146404,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>043</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>043</i></p><p><b>Tramo: </b><i>042</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.616598183946618</i></p><p><b>CoordY: </b><i>-74.08655751496553</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>51.773</i></p></description><LookAt>
+                        <longitude>-74.08655751496553</longitude>
+                        <latitude>4.616598183946618</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08655751496553,4.616598183946618,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 043 - 042</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08619105815887,4.616309445146404,0 -74.08655751496553,4.616598183946618,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>044</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>044</i></p><p><b>Tramo: </b><i>043</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.616655998530242</i></p><p><b>CoordY: </b><i>-74.08663429319859</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>10.665</i></p><p><b>Circuitos_BT: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08663429319859</longitude>
+                        <latitude>4.616655998530242</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08663429319859,4.616655998530242,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 044 - 043</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08655751496553,4.616598183946618,0 -74.08663429319859,4.616655998530242,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>045</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>045</i></p><p><b>Tramo: </b><i>044</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.6167926815444265</i></p><p><b>CoordY: </b><i>-74.08678818494081</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>22.845</i></p><p><b>Circuitos_BT: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08678818494081</longitude>
+                        <latitude>4.6167926815444265</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08678818494081,4.6167926815444265,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 045 - 044</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08663429319859,4.616655998530242,0 -74.08678818494081,4.6167926815444265,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>046</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>046</i></p><p><b>Tramo: </b><i>045</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.6170710603158875</i></p><p><b>CoordY: </b><i>-74.08710401505232</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>46.728</i></p><p><b>Circuitos_BT: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.08710401505232</longitude>
+                        <latitude>4.6170710603158875</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08710401505232,4.6170710603158875,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 046 - 045</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08678818494081,4.6167926815444265,0 -74.08710401505232,4.6170710603158875,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>047</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>047</i></p><p><b>Tipo_Elemento: </b><i>Poste_Derivacion</i></p><p><b>CoordX: </b><i>4.61710147143556</i></p><p><b>CoordY: </b><i>-74.0872099623084</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>12.220</i></p><p><b>Circuitos_BT: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.0872099623084</longitude>
+                        <latitude>4.61710147143556</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.0872099623084,4.61710147143556,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>048</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>048</i></p><p><b>Tramo: </b><i>047</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.616968798739072</i></p><p><b>CoordY: </b><i>-74.0873122215271</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>18.604</i></p><p><b>Circuitos_BT: </b><i>1</i></p><p><b>Cableado_Tel: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.0873122215271</longitude>
+                        <latitude>4.616968798739072</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.0873122215271,4.616968798739072,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 048 - 047</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.0872099623084,4.61710147143556,0 -74.0873122215271,4.616968798739072,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>049</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>049</i></p><p><b>Tramo: </b><i>047</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.61736046718216</i></p><p><b>CoordY: </b><i>-74.08747013658285</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>46.937</i></p></description><LookAt>
+                        <longitude>-74.08747013658285</longitude>
+                        <latitude>4.61736046718216</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08747013658285,4.61736046718216,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 049 - 047</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.0872099623084,4.61710147143556,0 -74.08747013658285,4.61736046718216,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>050</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>050</i></p><p><b>Tramo: </b><i>049</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.617554964570994</i></p><p><b>CoordY: </b><i>-74.08766996115446</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>30.955</i></p><p><b>Observaciones: </b><i>Cll 19 kr 30 costado sur</i></p></description><LookAt>
+                        <longitude>-74.08766996115446</longitude>
+                        <latitude>4.617554964570994</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08766996115446,4.617554964570994,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 050 - 049</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08747013658285,4.61736046718216,0 -74.08766996115446,4.617554964570994,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>051</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>051</i></p><p><b>Tramo: </b><i>050</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.617748459343054</i></p><p><b>CoordY: </b><i>-74.0879227593541</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>35.327</i></p></description><LookAt>
+                        <longitude>-74.0879227593541</longitude>
+                        <latitude>4.617748459343054</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.0879227593541,4.617748459343054,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 051 - 050</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.08766996115446,4.617554964570994,0 -74.0879227593541,4.617748459343054,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark><Placemark>
+                      <name>052</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>052</i></p><p><b>Tramo: </b><i>051</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.617811955025334</i></p><p><b>CoordY: </b><i>-74.08805519342422</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>16.288</i></p><p><b>Circuitos_BT: </b><i>1</i></p><p><b>Observaciones: </b><i>Cll 19 kr 30 costado sir</i></p></description><LookAt>
+                        <longitude>-74.08805519342422</longitude>
+                        <latitude>4.617811955025334</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.08805519342422,4.617811955025334,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 052 - 051</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -74.0879227593541,4.617748459343054,0 -74.08805519342422,4.617811955025334,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark></Folder>
+              </Document>
+              </kml>

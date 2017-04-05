@@ -1,0 +1,128 @@
+body.other {
+    background-color: #F3F3F3
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: .4em;
+    background-color: #cbcbcb
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3a7ac5
+}
+
+.timeline
+{
+	background-color: #F2F2F2;
+}
+
+#txtVerCronograma_Fecha
+{
+	border: none;
+	text-align: right;
+}
+
+#cntPanelObra button
+{
+	min-height: 4em;
+}
+#cntAuditoria_ContenedorSoportes img
+{
+	max-height: 240px;
+	min-height: 239px;
+
+	max-width: 240px;
+	min-width: 239px;
+}
+.noMostrar
+{
+	display: none;
+}
+#cntAuditoria_AistenteSoportes img
+{
+	max-height: 130px;
+	min-height: 129px;
+
+	max-width: 130px;
+	min-width: 129px;	
+}
+#lstListadoNC li:hover
+{
+	cursor:pointer;
+}
+#cntMesa_Imagenes
+{
+	max-height: 480px;	
+	/*overflow: hidden;*/
+}
+#cntMesa_Imagenes img, #cntMesa_Imagenes
+{
+	max-height: 400px;
+}
+#customGmap
+{
+	min-width: 320px;
+	min-height: 200px;
+}
+.contenedorCheck:hover
+{
+	cursor:pointer;
+}
+#cntAuditoria_AistenteSoportes_Media
+{
+	max-height: 230px;
+	overflow: scroll;
+}
+/*
+.btnReporte_Proyecto
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+#cntReportes_Proyectos .par
+{
+	border-left-style: solid;
+	border-left-width: 1px;
+	padding-left: 5em;
+}
+.btnReporte_Proyecto:hover
+{
+	cursor:pointer;
+}
+*/
+.btnReporte_Proyecto
+{
+	margin: 0.5em;
+}
+.btnReporte_Proyecto_Titulo
+{
+	background: #ACD57C;
+	border: 1px solid;
+	border-right: 1px solid;
+	border-top: 1px solid;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	color: white;
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+
+.btnReporte_Proyecto_Contenido
+{
+	background: white;
+	color: #37474F;
+
+	padding-top: 3em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+}
+
+.btnReporte_Proyecto_Widgets
+{
+	background: white;
+}
+
+.btnReporte_Proyecto:hover
+{
+	cursor:pointer;
+}

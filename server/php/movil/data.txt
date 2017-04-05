@@ -1,0 +1,17 @@
+INSERT INTO Levantamiento (Prefijo, idProyecto, codPoste, coordenadas, Usuario, fecha, Datos) 
+           VALUES (
+              '20161116153721016', 
+              '20161116084250014', 
+              '014', 
+              '8.86766555#-79.89405965#3', 
+              '16', 
+              '2016-11-16 15:37:23', 
+              '{\"Usuario\":\"16\",\"CodPoste\":\"014\",\"Tramo\":\"\",\"TipoElemento\":\"Poste\",\"CoordX\":\"8.86766555\",\"CoordY\":\"-79.89405965\",\"CoordQ\":\"3\",\"Amarre\":\"\",\"Apoyo_Material\":\"HORMIGON\",\"Apoyo_Capacidad\":\"6mx300daN\",\"Apoyo_Estado\":\"BUENO\",\"Cruceta_Material\":\"MADERA\",\"Cruceta_Doble\":\"0\",\"Cruceta_Sencilla\":\"0\",\"Aislamiento_Porcelana\":\"0\",\"Aislamiento_Polimerico\":\"0\",\"Aislamiento_Cadenas\":\"0\",\"Aislamiento_CadenaPolimerica\":\"0\",\"Trafo_Hay\":\"NO\",\"Bastidor_Horquilla\":\"0\",\"Bastidor_Aislador2\":\"0\",\"Bastidor_Aislador3\":\"0\",\"Bastidor_Aislador4\":\"0\",\"Retenidas_Aerea\":\"0\",\"Retenidas_Tierra\":\"0\",\"Retenidas_Violin\":\"0\",\"CajaDeDerivacion\":\"0\",\"MediaTension_Recloser\":\"0\",\"MediaTension_Switch\":\"0\",\"MediaTension_TransformadorCorriente\":\"0\",\"MediaTension_TransformadorPotencial\":\"0\",\"MediaTension_BancoCondensadores\":\"0\",\"MediaTension_PuestaTierra\":\"0\",\"MediaTension_Lamparas\":\"Sodio\",\"MediaTension_Lamparas_Numero\":\"0\",\"OtrosServicios\":\"\",\"Observaciones\":\"Punto y foto hacia el trafo cercano\"}')
+            ON DUPLICATE KEY UPDATE
+               Prefijo = VALUES(Prefijo),
+               idProyecto = VALUES(idProyecto),
+               codPoste = VALUES(codPoste),
+               coordenadas = VALUES(coordenadas),
+               Usuario = VALUES(Usuario),
+               fecha = VALUES(fecha),
+               Datos = VALUES(Datos);

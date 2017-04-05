@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                  <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+                  <Document>
+                    <name>Cll 153-2</name>
+                    <Style id="icoPoste">
+                      <IconStyle>
+                        <scale>1</scale>
+                        <Icon>
+                          <href>http://orion.wsppb-latam.com/assets/images/icons/poste.png</href>
+                        </Icon>
+                        <hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+                      </IconStyle>
+                    </Style>
+                    <Style id="icoLine">
+                      <LineStyle>
+                        <color>ff00264c</color>
+                        <width>5</width>
+                      </LineStyle>
+                    </Style>
+                    <Folder>
+                      <name>Cll 153-2</name>
+                      <open>1</open><Placemark>
+                      <name>001</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>001</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.754993337994232</i></p><p><b>CoordY: </b><i>-74.09320134669542</i></p><p><b>CoordQ: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.09320134669542</longitude>
+                        <latitude>4.754993337994232</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.09320134669542,4.754993337994232,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>002</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>002</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.755162069685051</i></p><p><b>CoordY: </b><i>-74.09341894090176</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>30.552</i></p></description><LookAt>
+                        <longitude>-74.09341894090176</longitude>
+                        <latitude>4.755162069685051</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.09341894090176,4.755162069685051,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>003</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>003</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.755316099964744</i></p><p><b>CoordY: </b><i>-74.09361474215983</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>27.643</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.09361474215983</longitude>
+                        <latitude>4.755316099964744</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.09361474215983,4.755316099964744,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>004</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>004</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.75548249272276</i></p><p><b>CoordY: </b><i>-74.09383568912745</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>30.688</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.09383568912745</longitude>
+                        <latitude>4.75548249272276</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.09383568912745,4.75548249272276,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>005</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>005</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.755641868881001</i></p><p><b>CoordY: </b><i>-74.09405127167702</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>29.745</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.09405127167702</longitude>
+                        <latitude>4.755641868881001</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.09405127167702,4.755641868881001,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>006</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>006</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.7557601480186</i></p><p><b>CoordY: </b><i>-74.09420616924763</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>21.624</i></p><p><b>Circuitos_AP: </b><i>1</i></p></description><LookAt>
+                        <longitude>-74.09420616924763</longitude>
+                        <latitude>4.7557601480186</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.09420616924763,4.7557601480186,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>007</name><description><p><b>Usuario: </b><i>119</i></p><p><b>CodPoste: </b><i>007</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.755890455519581</i></p><p><b>CoordY: </b><i>-74.09440398216248</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Calculada: </b><i>26.276</i></p><p><b>Circuitos_AP: </b><i>1</i></p><p><b>Observaciones: </b><i>Cll153 -108a 04 costado sur ori</i></p></description><LookAt>
+                        <longitude>-74.09440398216248</longitude>
+                        <latitude>4.755890455519581</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.09440398216248,4.755890455519581,0</coordinates>
+                      </Point>
+                    </Placemark></Folder>
+              </Document>
+              </kml>

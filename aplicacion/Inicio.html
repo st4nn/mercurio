@@ -1,0 +1,71 @@
+  <!-- Page -->
+
+    <div class="row height-full">
+      <div class="text-center row col-md-12">
+        <img id="imgInicio_Cargando" src="../assets/preloader.gif"  class="hide" alt="" style="margin:auto">
+        <div class="col-xs-4 pull-right">
+          <button id="btnInicio_Actualizar" class="btn btn-success btn-floating"><i class="icon wb-refresh"></i></button> 
+          <br><br>
+        </div>
+      </div>
+      <div class="col-xlg-6 col-md-6" style="height:50%;">
+        <!-- Widget Linepoint -->
+        <div class="widget widget-shadow bg-blue-600 white" id="widgetLinepoint">
+          <div class="widget-content">
+            <div class="padding-top-25 padding-horizontal-30">
+              <div class="row no-space">
+                <div class="col-md-3">
+                  <p>Levantamientos de Hoy</p>
+                </div>
+                <div class="col-md-3 text-right">
+                  <p class="font-size-30 text-nowrap"><span id="lblInicio_Proyectos">0</span><br>Proyectos</p>
+                </div>
+                <div class="col-md-3 text-right">
+                  <p class="font-size-30 text-nowrap"><span id="lblInicio_Postes">0</span><br>Postes</p>
+                </div>
+                <div class="col-md-3 text-right">
+                  <p class="font-size-30 text-nowrap"><span id="lblInicio_Fotos">0</span><br>Fotos</p>
+                </div>
+              </div>
+            </div>
+            <div class="ct-chart height-120"></div>
+          </div>
+        </div>
+        <!-- End Widget Linepoint -->
+      </div>
+      <div class="col-xlg-6 col-md-6" style="height:50%;">
+        <!-- Widget Sale Bar -->
+        <div class="widget widget-shadow bg-purple-600 white" id="widgetSaleBar">
+          <div class="widget-content">
+            <div class="padding-top-25 padding-horizontal-30">
+              <div class="row no-space">
+                <div class="col-md-3">
+                  <p>Levantamiento de los Últimos 7 días</p>
+                  <p class="purple-200"></p>
+                </div>
+                <div class="col-md-3 text-right">
+                  <p class="font-size-30 text-nowrap"><span id="lblInicio_ProyectosM">0</span><br>Proyectos</p>
+                </div>
+                <div class="col-md-3 text-right">
+                  <p class="font-size-30 text-nowrap"><span id="lblInicio_PostesM">0</span><br>Postes</p>
+                </div>
+                <div class="col-md-3 text-right">
+                  <p class="font-size-30 text-nowrap"><span id="lblInicio_FotosM">0</span><br> Fotos</p>
+                </div>
+              </div>
+            </div>
+            <div class="ct-chart height-120"></div>
+          </div>
+        </div>
+        <!-- End Widget Sale Bar -->
+      </div>
+    </div>
+
+    <!-- End Page -->
+<script type="text/javascript">
+    jQuery(document).ready(function() 
+      {
+        modInicio();
+      });
+
+</script>

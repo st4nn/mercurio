@@ -1,0 +1,239 @@
+    <div class="row page-profile">
+      <div class="col-md-3">
+          <!-- Page Widget -->
+        <div class="widget widget-shadow text-center">
+          <div class="widget-header">
+            <button type="button" class="btn btn-round btn-primary btn-pill-right btn-block btnReporte_Volver">Volver</button>
+            <input id="txtReporte_idProyecto" type="hidden">
+            <div class="widget-header-content">
+              <br>
+              <h4 class="profile-user" id="lblReporte_ProyectoNombre"></h4>
+              <p id="lblReporte_ProyectoCodigo" class="profile-job"></p>
+              <p id="lblReporte_ProyectoDescripcion"></p>
+              <p id="lblReporte_ProyectoUnitario" class="profile-job"></p>
+              <div class="text-left">
+                <strong>Creado Por:</strong>
+                <p id="lblReporte_ProyectoCreador"></p>
+                <strong>Responsable Actual:</strong>
+                <p id="lblReporte_ProyectoResponsable"></p>
+              </div>
+              <div class="text-right">
+                <p><small><i id="lblReporte_ProyectoFechaCreacion"></i></small></p>
+                <p>Fecha Entrega <small><i id="lblReporte_ProyectoFechaEntrega"></i></small></p>
+              </div>
+            </div>
+          </div>
+          <div class="widget-footer">
+            <div class="row no-space">
+              <div class="col-xs-6">
+                <strong id="lblReporte_ProyectoPostes" class="profile-stat-count">0</strong>
+                <span>Postes</span>
+              </div>
+              <div class="col-xs-6">
+                <strong id="lblReporte_ProyectoFotos" class="profile-stat-count">0</strong>
+                <span>Archivos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Page Widget -->
+      </div>
+      <div class="col-md-9">
+          <!-- Panel -->
+          <div class="panel">
+            <div class="panel-body nav-tabs-animate">
+              <ul class="nav nav-tabs nav-tabs-line" data-plugin="nav-tabs" role="tablist">
+                <li class="active" role="presentation">
+                  <a id="bntReporte_AbrirMapa" data-toggle="tab" href="#tabReporte_Mapa" aria-controls="tabReporte_Mapa" role="tab">
+                    <i class="icon wb-map"></i>Mapa 
+                  </a>
+                </li>
+                <li role="presentation" id="bntReporte_AbrirTabla">
+                  <a  data-toggle="tab" href="#tabReporte_Tabla" aria-controls="tabReporte_Tabla" role="tab">
+                    <i class="icon wb-table"></i> Datos
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a data-toggle="tab" href="#tabReporte_Fotos" aria-controls="tabReporte_Fotos" role="tab">
+                    <i class="icon wb-image"></i> Fotos
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a data-toggle="tab" href="#tabReporte_Archivos" aria-controls="tabReporte_Archivos" role="tab">
+                    <i class="icon wb-attach-file"></i> Archivos
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a data-toggle="tab" href="#tabReporte_Asignar" aria-controls="tabReporte_Asignar" role="tab">
+                    <i class="icon wb-users"></i> Asignar
+                  </a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div class="tab-pane active animation-slide-left" id="tabReporte_Mapa" role="tabpanel">
+                  <div class="col-md-12 padding-10">
+                    <div class="col-md-12 height-500" id="cntReporte_Mapa"></div>
+                    <button class="btn btn-success col-md-4" id="btnReporte_DescargarKML"><i class="icon wb-download"></i> Descargar KML</button>
+                  </div>
+                </div>
+              
+                <div class="tab-pane animation-slide-left" id="tabReporte_Tabla" role="tabpanel">
+                  <div class="col-md-12 padding-3">
+                    <div id="cntReporte_Tabla" class="col-md-12 margin-top-50"></div>
+                  </div>
+                </div>
+
+                <div class="tab-pane animation-slide-left" id="tabReporte_Fotos" role="tabpanel">
+                  <div class="col-md-12 padding-3">
+                    <ul  id="cntReporte_Fotos" class="list-group">
+
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="tab-pane animation-slide-left" id="tabReporte_Archivos" role="tabpanel">
+                  <div class="col-md-12 padding-10 margin-top-20">
+                      <h4 class="example-title">Agregar Archivos</h4>
+                      <div class="col-md-8">
+                          <h5 class="example-title">Cargar Archivo</h5>
+                          <form class="form-group" id="frmReporte_Archivos" action="" method="post" enctype="multipart/form-data">
+                            <div class="input-group input-group-file">
+                              <input type="text" class="form-control inputText" readonly="">
+                              <span class="input-group-btn">
+                                <span class="btn btn-success btn-file">
+                                  <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+                                  Buscar
+                                  <input type="file" name="archivo" class="inputControl">
+                                </span>
+                                <button type="submit" class="btn btn-success">
+                                  <i class="icon wb-upload" aria-hidden="true"></i> Subir
+                                </button>
+                              </span>
+                            </div>
+                            <div class="progress progress-lg">
+                              <div id="txtReporte_ArchivoProgreso" class="progress-bar progress-bar-success" style="width: 0%;" role="progressbar"></div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-md-12">
+                          
+                        <img id="imgReporte_Archivos_Cargando" src="../assets/preloader.gif" class="pull-right hide" alt="...">
+                          <button class="btn btn-warning coll-md-4 pull-right" id="btnReporte_Archivos_DescargarTodos" idProyecto="0">
+                              <i class="icon wb-download"></i> Descargar Todos
+                          </button>
+                        </div>
+                        <div class="col-md-10">
+                          <ul id="cntReporte_Archivos" class="list-group list-group-dividered list-group-full">
+                                
+                              </ul>
+                        </div>
+                  </div>
+                </div>
+                <div class="tab-pane animation-slide-left" id="tabReporte_Asignar" role="tabpanel">
+                  <div class="col-md-12 padding-10 margin-top-20">
+                    <div>
+                      <div class="example-wrap col-md-4 margin-sm-0">
+                        <h4><small>Responsable Actual</small></h4>
+                        <div class="form-group">
+                          <h4 id="lblReporte_ProyectoResponsableActual"></h4>
+                        </div>
+                      </div>
+                      <div class="example-wrap col-md-4 margin-sm-0">
+                        <h4 class="example-title">Nuevo Responsable</h4>
+                        <div class="form-group">
+                          <input id="lbltxtReporte_ProyectoIdResponsableNuevo" type="hidden">
+                          <select id="txtReporte_ProyectoResponsableNuevo" class="form-control">
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="example-wrap col-md-4 margin-sm-0">
+                        <h4 class="example-title">Nuevo Estado</h4>
+                        <div class="form-group">
+                          <select id="txtReporte_ProyectoEstadoNuevo" class="form-control">
+                            <option value="2">Trabajo Asignado</option>
+                            <option value="3">En Levantamiento</option>
+                            <option value="4">Levantamiento Terminado</option>
+                            <option value="5">En Dibujo</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div id="cntReporte_Asignaciones_Trasladar" class="col-md-12 row">
+                        <div class="col-md-4">
+                          <button id="btnReporte_Trasladar" class="btn btn-info btn-block text-left margin-5" row><i class="icon wb-users"></i>Trasladar</button>
+                        </div>
+                        <div class="col-md-4">
+                          <button id="btnReporte_Anular" class="btn btn-warning btn-block text-left margin-5"><i class="icon fa-trash"></i>Anular</button>
+                        </div>
+                        <div class="col-md-4">
+                          <button id="btnReporte_Entregar" class="btn btn-danger btn-block text-left margin-5"><i class="icon wb-check-circle"></i>Entregar Proyecto</button>
+                        </div>
+                      </div>
+
+                      <div class="">
+                        <table id="tblProyecto_Asignaciones" class="table table-hover table-striped blue-grey-600">
+                          <thead>
+                            <tr>
+                              <th class="width-100"></th>
+                              <th>Usuario Anterior</th>
+                              <th>Estado Anterior</th>
+                              <th>Usuario Nuevo</th>
+                              <th>Estado Nuevo</th>
+                              <th>Fecha</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>                  
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- End Page -->
+
+<div class="modal fade modal-3d-flip-vertical" id="cntReporte_Asignaciones_Entregar" aria-hidden="true" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <form id="frmReporte_Asignaciones_Entregar" class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title">Entregar Proyecto</h4>
+      </div>
+      <div class="modal-body margin-bottom-10">
+          <div class="form-group">
+        <label class="col-lg-12 col-sm-3 control-label">Cantidad de <span id="lblReporte_Asignaciones_Entregar_Unidad"></span> realizadas
+          <span class="required">*</span>
+        </label>
+        <div class=" col-lg-12 col-sm-9">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <i class="icon fa-users" aria-hidden="true"></i>
+            </span>
+            <input type="text" class="form-control guardar" id="txtReporte_Asignaciones_Entregar_Cantidad" placeholder="Cantidad Realizada" required>
+            <br>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default margin-0" data-dismiss="modal">Cancelar</button>
+        <button type="submit" class="btn btn-primary">Crear</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+    jQuery(document).ready(function() {       
+        modRepLevantamiento();
+      });
+
+</script>

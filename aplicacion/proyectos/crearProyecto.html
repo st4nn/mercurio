@@ -1,0 +1,101 @@
+  <!-- Page -->
+<div class="panel">
+  <div class="panel-body">
+    <form id="frmCrearProyecto">
+      <input type="hidden" class="guardar" id="txtCrearProyecto_id">
+      <input type="hidden" class="guardar" id="txtCrearProyecto_idProyecto">
+      <div class="example-wrap margin-sm-0 col-md-6">
+        <h4 class="example-title">Empresa</h4>
+        <div class="form-group">
+          <select id="txtCrearProyecto_Empresa" type="text" class="form-control guardar">
+          </select>
+        </div>
+      </div>
+      <div class="example-wrap margin-sm-0 col-md-6">
+        <h4 class="example-title">Zona</h4>
+        <div class="form-group">
+          <select id="txtCrearProyecto_Zona" type="text" class="form-control guardar">
+          </select>
+        </div>
+      </div>
+      
+      <div class="example-wrap margin-sm-0 col-md-6">
+        <h4 class="example-title">Tipo de Area</h4>
+        <div class="form-group">
+          <select id="txtCrearProyecto_TipoDeArea" type="text" class="form-control guardar" required>
+            <option value='URBANA'>URBANA</option>
+            <option value='RURAL DISPERSA'>RURAL DISPERSA</option>
+            <option value='RURAL CONCENTRADA'>RURAL CONCENTRADA</option>
+            <option value='URBANA Y RURAL'>URBANA Y RURAL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="example-wrap margin-sm-0 col-md-6">
+        <h4 class="example-title">Asignar A</h4>
+        <div class="form-group">
+          <select id="txtCrearProyecto_Responsable" type="text" class="form-control guardar" required>
+
+          </select>
+        </div>
+      </div>
+
+      <div class="example-wrap margin-sm-0 col-md-6">
+        <h4 class="example-title">Fecha Recepción OT</h4>
+        <div class="form-group">
+          <input id="txtCrearProyecto_FechaRecepcion" type="date" class="form-control datepicker guardar" required>
+        </div>
+      </div>
+
+      <div class="example-wrap margin-sm-0 col-md-6">
+        <h4 class="example-title">Fecha Prevista Entrega Levantamiento</h4>
+        <div class="form-group">
+          <input id="txtCrearProyecto_FechaEntregaLevantamiento" type="date" class="form-control datepicker guardar" required>
+        </div>
+      </div>
+      
+      <div class="example-wrap margin-sm-0 col-md-6">
+        <h4 class="example-title">Codigo del Levantamiento</h4>
+        <div class="form-group">
+          <input id="txtCrearProyecto_Codigo" type="text" class="form-control guardar" required>
+        </div>
+      </div>
+
+      <div class="example-wrap margin-sm-0 col-md-6">
+        <h4 class="example-title">Nombre</h4>
+        <div class="form-group">
+          <input id="txtCrearProyecto_Nombre" type="text" class="form-control guardar" required>
+        </div>
+      </div>
+
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Descripción</h4>
+        <div class="form-group">
+          <textarea id="txtCrearProyecto_Descripcion" type="text" class="form-control guardar"></textarea>
+        </div>
+      </div>
+      
+      <div class="example-wrap margin-sm-0 col-md-12">
+        <h4 class="example-title">Item</h4>
+        <div class="form-group">
+          <select id="txtCrearProyecto_Item" type="text" class="form-control guardar" required>
+            <option value="1">POT</option>
+            <option value="2">Permiso</option>
+          </select>
+        </div>
+      </div>  
+
+      <div class="form-actions col-md-12">
+        <button class="btn btn-success btn-floating" title="Guardar" type="submit"><i class="icon fa-floppy-o"></i></button>
+        <button id="btnIngresar_Reset" class="btn btn-danger btn-floating" title="Reiniciar" type="reset"><i class="icon wb-close"></i></button>
+      </div>
+    </form>
+  </div>
+</div>
+    <!-- End Page -->
+<script type="text/javascript">
+    jQuery(document).ready(function() {       
+        crearProyecto();
+      });
+
+</script>

@@ -1,0 +1,47 @@
+  <!-- Page -->
+  <div class="col-md-12">
+    <div class="panel panel-primary panel-bordered">
+      <div class="panel-heading">
+        <h3 class="panel-title">Proyectos Listos Para Facturar</h3>
+        <div class="panel-actions">
+          <button id="btnListosParaFacturar_Actualizar" class="btn btn-success btn-floating"><i class="icon wb-refresh"></i></button> 
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table id="tblProyectosAnulados_Tabla" class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>Fecha Prevista Entrega</th>
+                <th>Fecha Real Entrega</th>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Descipción</th>
+                <th>Item</th>
+                <th>Descripción</th>
+                <th>Cantidad Entregada</th>
+                <th>Valor Unitario</th>
+                <th>Valor Total</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div id="cntListosParaFacturar_Consolidados" class="col-md-12">
+
+  </div>
+    <!-- End Page -->
+<script type="text/javascript">
+    jQuery(document).ready(function() {       
+        reportes_ProyectosListosParaFacturar();
+      });
+
+</script>

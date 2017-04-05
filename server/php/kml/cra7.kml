@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                  <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+                  <Document>
+                    <name>Cra 7 </name>
+                    <Style id="icoPoste">
+                      <IconStyle>
+                        <scale>1</scale>
+                        <Icon>
+                          <href>http://orion.wsppb-latam.com/assets/images/icons/poste.png</href>
+                        </Icon>
+                        <hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+                      </IconStyle>
+                    </Style>
+                    <Style id="icoLine">
+                      <LineStyle>
+                        <color>ff00264c</color>
+                        <width>5</width>
+                      </LineStyle>
+                    </Style>
+                    <Folder>
+                      <name>Cra 7 </name>
+                      <open>1</open><Placemark>
+                      <name>001</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>001</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74654245</i></p><p><b>CoordY: </b><i>-74.02263634</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p><p><b>Observaciones: </b><i>Cd 12007 inicio en cra 7 calle 170 costado occi </i></p></description><LookAt>
+                        <longitude>-74.02263634</longitude>
+                        <latitude>4.74654245</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02263634,4.74654245,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>002</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>002</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74653937</i></p><p><b>CoordY: </b><i>-74.02265747</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>2.1</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02265747</longitude>
+                        <latitude>4.74653937</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02265747,4.74653937,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>003</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>003</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74656918</i></p><p><b>CoordY: </b><i>-74.02264869</i></p><p><b>CoordQ: </b><i>5</i></p><p><b>Longitud_Segmento: </b><i>49.3</i></p></description><LookAt>
+                        <longitude>-74.02264869</longitude>
+                        <latitude>4.74656918</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02264869,4.74656918,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>004</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>004</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74591258</i></p><p><b>CoordY: </b><i>-74.02247147</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>83.5</i></p><p><b>Punto_Fisico: </b><i>18943581</i></p></description><LookAt>
+                        <longitude>-74.02247147</longitude>
+                        <latitude>4.74591258</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02247147,4.74591258,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>006</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>006</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74533236</i></p><p><b>CoordY: </b><i>-74.02245323</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>143.4</i></p><p><b>Punto_Fisico: </b><i>19013135</i></p></description><LookAt>
+                        <longitude>-74.02245323</longitude>
+                        <latitude>4.74533236</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02245323,4.74533236,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>005</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>005</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74561695</i></p><p><b>CoordY: </b><i>-74.02238886</i></p><p><b>CoordQ: </b><i>5</i></p><p><b>Longitud_Segmento: </b><i>120.7</i></p><p><b>Punto_Fisico: </b><i>18943593</i></p><p><b>Observaciones: </b><i>Red de bta sale hacia el occidente por la calle 168 siguiente poste a 35 metros</i></p></description><LookAt>
+                        <longitude>-74.02238886</longitude>
+                        <latitude>4.74561695</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02238886,4.74561695,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>007</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>007</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74515417</i></p><p><b>CoordY: </b><i>-74.02240165</i></p><p><b>CoordQ: </b><i>4</i></p><p><b>Longitud_Segmento: </b><i>163.9</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p><p><b>Observaciones: </b><i>Cd 12010   S778 </i></p></description><LookAt>
+                        <longitude>-74.02240165</longitude>
+                        <latitude>4.74515417</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02240165,4.74515417,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>008</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>008</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74518526</i></p><p><b>CoordY: </b><i>-74.02247105</i></p><p><b>CoordQ: </b><i>5</i></p><p><b>Longitud_Segmento: </b><i>165.8</i></p><p><b>Punto_Fisico: </b><i>18954857</i></p></description><LookAt>
+                        <longitude>-74.02247105</longitude>
+                        <latitude>4.74518526</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02247105,4.74518526,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>009</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>009</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74475641</i></p><p><b>CoordY: </b><i>-74.02247948</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>214.2</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p><p><b>Observaciones: </b><i>Red de mt bt y tele sale hacia el occi por la calle 167 D proximo poste a 35 mts</i></p></description><LookAt>
+                        <longitude>-74.02247948</longitude>
+                        <latitude>4.74475641</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02247948,4.74475641,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>011</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>011</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74413731</i></p><p><b>CoordY: </b><i>-74.02235386</i></p><p><b>CoordQ: </b><i>4</i></p><p><b>Longitud_Segmento: </b><i>280.5</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02235386</longitude>
+                        <latitude>4.74413731</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02235386,4.74413731,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>010</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>010</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74449013</i></p><p><b>CoordY: </b><i>-74.02243958</i></p><p><b>CoordQ: </b><i>5</i></p><p><b>Longitud_Segmento: </b><i>247.9</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02243958</longitude>
+                        <latitude>4.74449013</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02243958,4.74449013,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>012</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>012</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74390285</i></p><p><b>CoordY: </b><i>-74.02239777</i></p><p><b>CoordQ: </b><i>4</i></p><p><b>Longitud_Segmento: </b><i>316.3</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02239777</longitude>
+                        <latitude>4.74390285</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02239777,4.74390285,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>013</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>013</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74339972</i></p><p><b>CoordY: </b><i>-74.02238451</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>357.3</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02238451</longitude>
+                        <latitude>4.74339972</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02238451,4.74339972,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>014</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>014</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74303434</i></p><p><b>CoordY: </b><i>-74.02240614</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>408.9</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p><p><b>Observaciones: </b><i>Red de mt cruza cra 7 seccionador nv </i></p></description><LookAt>
+                        <longitude>-74.02240614</longitude>
+                        <latitude>4.74303434</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02240614,4.74303434,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>017</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>017</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74258443</i></p><p><b>CoordY: </b><i>-74.02247759</i></p><p><b>CoordQ: </b><i>4</i></p><p><b>Longitud_Segmento: </b><i>458.8</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02247759</longitude>
+                        <latitude>4.74258443</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02247759,4.74258443,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>015</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>015</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74297331</i></p><p><b>CoordY: </b><i>-74.02250611</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>411.0</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p><p><b>Observaciones: </b><i>Red de mt y tele sale al occi por encima de hospital simon bolivar porximo punto de conexion a 40 mts</i></p></description><LookAt>
+                        <longitude>-74.02250611</longitude>
+                        <latitude>4.74297331</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02250611,4.74297331,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>016</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>016</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74285647</i></p><p><b>CoordY: </b><i>-74.02238244</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>430.7</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02238244</longitude>
+                        <latitude>4.74285647</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02238244,4.74285647,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>018</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>018</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74240744</i></p><p><b>CoordY: </b><i>-74.02241129</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>489.7</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02241129</longitude>
+                        <latitude>4.74240744</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02241129,4.74240744,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>019</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>019</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74210309</i></p><p><b>CoordY: </b><i>-74.02239642</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>520.4</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02239642</longitude>
+                        <latitude>4.74210309</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02239642,4.74210309,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>021</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>021</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.7413943</i></p><p><b>CoordY: </b><i>-74.02247597</i></p><p><b>CoordQ: </b><i>4</i></p><p><b>Longitud_Segmento: </b><i>601.3</i></p><p><b>Punto_Fisico: </b><i>18943709</i></p></description><LookAt>
+                        <longitude>-74.02247597</longitude>
+                        <latitude>4.7413943</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02247597,4.7413943,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>020</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>020</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74168119</i></p><p><b>CoordY: </b><i>-74.02247967</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>56.9</i></p><p><b>Punto_Fisico: </b><i>Ilegible</i></p></description><LookAt>
+                        <longitude>-74.02247967</longitude>
+                        <latitude>4.74168119</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02247967,4.74168119,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>022</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>022</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74137818</i></p><p><b>CoordY: </b><i>-74.02247458</i></p><p><b>CoordQ: </b><i>4</i></p><p><b>Longitud_Segmento: </b><i>603.4</i></p><p><b>Punto_Fisico: </b><i>18943266</i></p><p><b>Observaciones: </b><i>Red de bt cruza la cra 7 cd 5111 y S 783</i></p></description><LookAt>
+                        <longitude>-74.02247458</longitude>
+                        <latitude>4.74137818</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02247458,4.74137818,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>023</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>023</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74121362</i></p><p><b>CoordY: </b><i>-74.02256677</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>625.8</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02256677</longitude>
+                        <latitude>4.74121362</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02256677,4.74121362,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>024</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>024</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74097896</i></p><p><b>CoordY: </b><i>-74.02250881</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>641.0</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p><p><b>Observaciones: </b><i>Red de bt mt tele y ap sale al occi por la calle 165 proximo posta a 30 mts</i></p></description><LookAt>
+                        <longitude>-74.02250881</longitude>
+                        <latitude>4.74097896</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02250881,4.74097896,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>025</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>025</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74100247</i></p><p><b>CoordY: </b><i>-74.02257444</i></p><p><b>CoordQ: </b><i>4</i></p><p><b>Longitud_Segmento: </b><i>653.4</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02257444</longitude>
+                        <latitude>4.74100247</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02257444,4.74100247,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>026</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>026</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.74054418</i></p><p><b>CoordY: </b><i>-74.02276382</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>695.8</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02276382</longitude>
+                        <latitude>4.74054418</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02276382,4.74054418,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>029</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>029</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.73952808</i></p><p><b>CoordY: </b><i>-74.02289274</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>818.2</i></p></description><LookAt>
+                        <longitude>-74.02289274</longitude>
+                        <latitude>4.73952808</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02289274,4.73952808,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>028</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>028</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.73985704</i></p><p><b>CoordY: </b><i>-74.02289481</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>778.2</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02289481</longitude>
+                        <latitude>4.73985704</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02289481,4.73985704,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>027</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>027</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.7402114</i></p><p><b>CoordY: </b><i>-74.02290192</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>736.0</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02290192</longitude>
+                        <latitude>4.7402114</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02290192,4.7402114,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>030</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>030</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.73943153</i></p><p><b>CoordY: </b><i>-74.02279636</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>832.7</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02279636</longitude>
+                        <latitude>4.73943153</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02279636,4.73943153,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>031</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>031</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.73906884</i></p><p><b>CoordY: </b><i>-74.02283936</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>873.6</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p><p><b>Observaciones: </b><i>Red de mt cruza la cra 7 equipo SZ numero 1106 seccionamiento S 786</i></p></description><LookAt>
+                        <longitude>-74.02283936</longitude>
+                        <latitude>4.73906884</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02283936,4.73906884,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>033</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>033</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.73868589</i></p><p><b>CoordY: </b><i>-74.02291983</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>915.1</i></p><p><b>Punto_Fisico: </b><i>18971245</i></p><p><b>Observaciones: </b><i>Cd 5115 Seccionamiento 787 </i></p></description><LookAt>
+                        <longitude>-74.02291983</longitude>
+                        <latitude>4.73868589</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02291983,4.73868589,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>032</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>032</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.73900575</i></p><p><b>CoordY: </b><i>-74.02292836</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>875.6</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p></description><LookAt>
+                        <longitude>-74.02292836</longitude>
+                        <latitude>4.73900575</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02292836,4.73900575,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>034</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>034</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.73871727</i></p><p><b>CoordY: </b><i>-74.02287679</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>917.2</i></p><p><b>Punto_Fisico: </b><i>18971257</i></p></description><LookAt>
+                        <longitude>-74.02287679</longitude>
+                        <latitude>4.73871727</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02287679,4.73871727,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>035</name><description><p><b>Usuario: </b><i>118</i></p><p><b>CodPoste: </b><i>035</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.7384083</i></p><p><b>CoordY: </b><i>-74.02289166</i></p><p><b>CoordQ: </b><i>3</i></p><p><b>Longitud_Segmento: </b><i>952.5</i></p><p><b>Punto_Fisico: </b><i>Nv</i></p><p><b>Observaciones: </b><i>Seccionamiento no visible red de mt sale al occidente por calle 163A donde el proximo poste de conexion esta a 30 mts</i></p></description><LookAt>
+                        <longitude>-74.02289166</longitude>
+                        <latitude>4.7384083</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.02289166,4.7384083,0</coordinates>
+                      </Point>
+                    </Placemark></Folder>
+              </Document>
+              </kml>

@@ -1,0 +1,2 @@
+[03-Apr-2017 13:38:13 UTC] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/wspcolom/public_html/mercurio/server/php/proyecto/cargarProyectosSemana.php on line 23
+[03-Apr-2017 13:38:13 UTC] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/wspcolom/public_html/mercurio/server/php/proyecto/cargarProyectosDia.php on line 22

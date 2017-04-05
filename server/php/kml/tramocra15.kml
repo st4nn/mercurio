@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                  <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+                  <Document>
+                    <name>Tramo Cra 15</name>
+                    <Style id="icoPoste">
+                      <IconStyle>
+                        <scale>1</scale>
+                        <Icon>
+                          <href>http://orion.wsppb-latam.com/assets/images/icons/poste.png</href>
+                        </Icon>
+                        <hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+                      </IconStyle>
+                    </Style>
+                    <Style id="icoLine">
+                      <LineStyle>
+                        <color>ff00264c</color>
+                        <width>5</width>
+                      </LineStyle>
+                    </Style>
+                    <Folder>
+                      <name>Tramo Cra 15</name>
+                      <open>1</open><Placemark>
+                      <name>001</name><description><p><b>Usuario: </b><i>1</i></p><p><b>CodPoste: </b><i>001</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>7.5244993396254625</i></p><p><b>CoordY: </b><i>-0.12825384736061096</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Segmento: </b><i>40</i></p><p><b>Punto_Fisico: </b><i>Qwe123</i></p><p><b>Observaciones: </b><i>Thetuetjtutu</i></p></description><LookAt>
+                        <longitude>-0.12825384736061096</longitude>
+                        <latitude>7.5244993396254625</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-0.12825384736061096,7.5244993396254625,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                      <name>002</name><description><p><b>Usuario: </b><i>1</i></p><p><b>CodPoste: </b><i>002</i></p><p><b>Tramo: </b><i>001</i></p><p><b>Tipo_Elemento: </b><i>Poste</i></p><p><b>CoordX: </b><i>4.675188331058334</i></p><p><b>CoordY: </b><i>-74.05917517840864</i></p><p><b>CoordQ: </b><i>1</i></p><p><b>Longitud_Segmento: </b><i>5</i></p><p><b>Observaciones: </b><i>?jgff</i></p></description><LookAt>
+                        <longitude>-74.05917517840864</longitude>
+                        <latitude>4.675188331058334</latitude>
+                        <altitude>0</altitude>
+                      </LookAt>
+                      <styleUrl>#icoPoste</styleUrl>
+                      <Point>
+                        <gx:drawOrder>1</gx:drawOrder>
+                        <coordinates>-74.05917517840864,4.675188331058334,0</coordinates>
+                      </Point>
+                    </Placemark><Placemark>
+                        <name>Tramo 002 - 001</name>
+                        <styleUrl>#icoLine</styleUrl>
+                        <LineString>
+                          <tessellate>1</tessellate>
+                          <coordinates>
+                            -0.12825384736061096,7.5244993396254625,0 -74.05917517840864,4.675188331058334,0
+                          </coordinates>
+                        </LineString>
+                      </Placemark></Folder>
+              </Document>
+              </kml>
