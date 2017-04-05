@@ -60,8 +60,6 @@ function aplicacion()
 
   $('[data-plugin="datepicker"]').datepicker();
 
-  abrirWebSQL();
-  instalarWebSQL();
 }
 
 function cargarModulo(vinculo, titulo, callback)
@@ -346,10 +344,11 @@ $.fn.crearDataTable = function(tds, callback)
           [10, 25, 50, -1],
           [10, 25, 50, "Todos"]
         ],
-        "sDom": '<"dt-panelmenu clearfix"lTfr>t<"dt-panelfooter clearfix"ip>',
-        "oTableTools": {
-          "sSwfPath": "../assets/vendor/datatables-tabletools/swf/copy_csv_xls_pdf.swf"
-        },
+        responsive: true,
+        "sDom": 'lBfrtip',
+        buttons: [
+        'copy', 'excel', 'pdf'
+        ],
         "language" : dtSpanish
       };
 
@@ -366,8 +365,10 @@ $.fn.crearDataTable = function(tds, callback)
     }
 
   $(this).DataTable(options);
+  
   callback();
 }
+
 function sumarFecha(fecha, days)
 {
     milisegundos=parseInt(35*24*60*60*1000);

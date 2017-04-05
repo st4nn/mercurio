@@ -3,7 +3,7 @@ require("class.phpmailer.php");
 
 function EnviarCorreo($Destinatario, $Asunto, $Mensaje)
 {
-	$mail = new PHPMailer();
+	/*$mail = new PHPMailer();
 	$mail->IsSMTP();
 
 	$mail->SMTPDebug = 0;
@@ -99,6 +99,7 @@ function EnviarCorreo($Destinatario, $Asunto, $Mensaje)
 	}else{
 	    $error_message = 1;
 	}
-	return $error_message; 
-}
+	return $error_message; */
+	return 1;
+}	
 ?>

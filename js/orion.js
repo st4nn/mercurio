@@ -4,10 +4,8 @@ var tmpLastMarker = null;
 
 function Inicio()
 {
-  cargarModulo("Inicio.html", "Trabajo Programado", inicio_ActualizarProyectos);
+  cargarModulo("Inicio.html", "Trabajo Programado");
   $("#lblNombreUsuario").text(Usuario.nombre);
-  /*sincronizarRecoleccion();
-  setInterval(sincronizarRecoleccion, 900000);*/
 }
 
 $.fn.llenarCombo = function(data, callback)
@@ -229,7 +227,6 @@ function modInicio_CargarGraficas()
 
 
     $("#lblInicio_Postes").text(Postes);
-    $("#lblInicio_Fotos").text(Fotos);
   }, "json");
 
   $.post('../server/php/proyecto/cargarProyectosSemana.php', {Usuario : Usuario.id, Fecha:fecha}, function(data, textStatus, xhr) 
@@ -281,30 +278,8 @@ function modInicio_CargarGraficas()
     
 
     $("#lblInicio_PostesM").text(Postes);
-    $("#lblInicio_FotosM").text(Fotos);
     $("#imgInicio_Cargando").hide();
   }, "json");
-}
-function inicio_ActualizarProyectos()
-{
-  ejecutarSQL("SELECT * FROM Proyectos", [], function(fila)
-        {
-          if (fila.length > 0)
-          {
-            $("#cntInicio_Proyectos li").remove();
-            tds = "";
-            $.each(fila, function(index, val) 
-            {
-                tds += '<li class="list-group-item height-50 btnInicio_Proyecto btn text-left" Filtro="' + val.Nombre + '" id="' + val.idProyecto + '">';
-                  tds += '<span class=""><i class="icon wb-chevron-right-mini" aria-hidden="true"></i></span>' + val.Nombre;
-                tds += '</li>';
-            });
-            $("#cntInicio_Proyectos").append(tds);
-          } else
-          {
-            Mensaje("Ok", "No hay proyectos para mostrar", "danger");
-          }
-        });
 }
 
 function levantamiento_Guardar(callback)

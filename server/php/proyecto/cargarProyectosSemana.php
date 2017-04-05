@@ -14,7 +14,7 @@
    if ($fecha <> "")
    {
     $fecha2 = " WHERE Levantamiento.fechaCargue >= '$fecha'";
-    $fecha = " WHERE (Levantamiento.fechaCargue >= '$fecha') OR (levArchivos.fechaCargue >= '$fecha')";
+    $fecha = " WHERE (Levantamiento.fechaCargue >= '$fecha')";
    }
 
    $sql = "SELECT COUNT(DISTINCT Proyectos.id) AS Proyectos FROM Proyectos INNER JOIN Levantamiento ON Levantamiento.idProyecto = Proyectos.IdProyecto " . $fecha2 . ";";
@@ -26,12 +26,10 @@
    $sql = "SELECT    
                 date_format(Levantamiento.fechaCargue, '%m-%d') as Dia,
                 $Proyectos AS Proyectos,                
-                COUNT(DISTINCT Levantamiento.Prefijo) AS Postes,
-                COUNT(DISTINCT levArchivos.id) AS Fotos
+                COUNT(DISTINCT Levantamiento.Prefijo) AS Postes
             FROM 
                Proyectos
                INNER JOIN Levantamiento ON Levantamiento.idProyecto = Proyectos.IdProyecto
-               INNER JOIN levArchivos ON levArchivos.IdProyecto = Proyectos.IdProyecto AND date_format(levArchivos.fechaCargue, '%m-%d') = date_format(Levantamiento.fechaCargue, '%m-%d')
             $fecha
             GROUP BY 
               Dia

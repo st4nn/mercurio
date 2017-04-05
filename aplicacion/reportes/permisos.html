@@ -1,0 +1,97 @@
+  <!-- Page -->
+  <form id="frmReporte_Permisos_Buscar" class="page-search-form" role="search">
+    <div class="col-sm-9">
+      <div class="input-search input-search-dark">
+        <i class="input-search-icon wb-search" aria-hidden="true"></i>
+        <input type="text" class="form-control" id="txtReportes_OT_Buscar" placeholder="Buscar">
+        <button type="button" class="input-search-close icon wb-close" aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="col-sm-3">
+        <button type="submit" class="btn btn-success btn-block"><i class="icon wb-search" aria-hidden="true"></i> Buscar</button>
+    </div>
+  </form>
+
+  <br><br><br><br>
+
+  <div class="col-md-12">
+    <div class="panel panel-primary panel-bordered">
+      <div class="panel-heading">
+        <h3 class="panel-title">Permisos</h3>
+        <div class="panel-actions">
+          <button id="btnReporte_Permisos_Actualizar" class="btn btn-success btn-floating"><i class="icon wb-refresh"></i></button> 
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table id="tblReporte_Permisos" class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th>Consecutivo</th>
+                <th>Zona</th>
+                <th>Responsable</th>
+                <th>Fecha Recepción</th>
+                <th>Fecha Prevista de Entrega</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Estado</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+    <!-- End Page -->
+<script type="text/javascript">
+    jQuery(document).ready(function() {       
+        $("#tblReporte_Permisos").crearDataTable();
+
+        $("#frmReporte_Permisos_Buscar").on('submit', function(evento)
+        {
+          evento.preventDefault();
+
+          $.post('../server/php/proyecto/cargarPermisos.php', {Usuario : Usuario.id}, function(data, textStatus, xhr) 
+          {
+            if (data == 0)
+            {
+              Mensaje("Error", "No se encontraron resultados con ese parametro", "danger");
+            } else
+            {
+              var tds = "";
+              $.each(data, function(index, val) 
+              {
+                 tds += '<tr>';
+                  tds += '<td><a class="lnkReporte_Permisos_AbrirFicha" href="#">' + val.id + '</a></td>';
+                  tds += '<td>' + val.Zona + '</td>';
+                  tds += '<td>' + val.Responsable + '</td>';
+                  tds += '<td>' + val.fechaRecepcion + '</td>';
+                  tds += '<td>' + val.fechaPrevEntrega + '</td>';
+                  tds += '<td>' + val.Nombre + '</td>';
+                  tds += '<td>' + val.Descripcion+ '</td>';
+                  tds += '<td>' + val.Estado + '</td>';
+                  tds += '<td></td>';
+                tds += '</tr>';
+              });
+
+              $("#tblReporte_Permisos").crearDataTable(tds);
+            }
+          }, 'json');
+        });
+
+        $(document).delegate('.lnkReporte_Permisos_AbrirFicha', 'click', function(evento) 
+        {
+          cargarModulo("reportes/fichaPermiso.html", "Ficha OT", function()
+          {
+
+          });
+        });
+      });
+
+</script>

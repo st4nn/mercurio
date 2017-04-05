@@ -25,12 +25,10 @@
    $sql = "SELECT    
                 Proyectos.IdProyecto AS idProyecto,
                 $Proyectos AS Proyectos,
-                COUNT(DISTINCT Levantamiento.Prefijo) AS Postes,
-                COUNT(DISTINCT levArchivos.id) AS Fotos
+                COUNT(DISTINCT Levantamiento.Prefijo) AS Postes
             FROM 
                Proyectos
                INNER JOIN Levantamiento ON Levantamiento.idProyecto = Proyectos.IdProyecto
-               INNER JOIN levArchivos ON levArchivos.IdProyecto = Proyectos.IdProyecto AND date_format(levArchivos.fechaCargue, '%m-%d') = date_format(Levantamiento.fechaCargue, '%m-%d')
             $fecha AND Proyectos.Item = 1
             GROUP BY 
               Proyectos.IdProyecto
