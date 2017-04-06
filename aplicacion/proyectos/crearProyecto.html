@@ -14,9 +14,19 @@
       <div class="example-wrap margin-sm-0 col-md-6">
         <h4 class="example-title">Zona</h4>
         <div class="form-group">
-          <select id="txtCrearProyecto_Zona" type="text" class="form-control guardar">
-          </select>
+          <div class="input-group input-group-file">
+            <select id="txtCrearProyecto_Zona" type="text" class="form-control guardar">
+            </select>
+            <span class="input-group-btn">
+              <span id="btnCrearProyecto_CrearZona" class="btn btn-success">
+                <i class="icon wb-plus" aria-hidden="true"></i>
+              </span>
+            </span>
+          </div>
         </div>
+        <div class="form-group">
+          
+        </div>  
       </div>
       
       <div class="example-wrap margin-sm-0 col-md-6">
@@ -54,7 +64,7 @@
         </div>
       </div>
       
-      <div class="example-wrap margin-sm-0 col-md-6">
+      <div class="example-wrap margin-sm-0 col-md-6 hide">
         <h4 class="example-title">Codigo del Levantamiento</h4>
         <div class="form-group">
           <input id="txtCrearProyecto_Codigo" type="text" class="form-control guardar" required>
@@ -96,6 +106,16 @@
 <script type="text/javascript">
     jQuery(document).ready(function() {       
         crearProyecto();
+
+        $("#btnCrearProyecto_CrearZona").on("click", function(evento)
+        {
+          evento.preventDefault();
+          modalCrearZona(function(id)
+          {
+            var tds = '<option value="' + id + '">' + $("#txtCrearZona_Nombre").val() + '</option>';
+            $("#txtCrearProyecto_Zona").append(tds);
+          });
+        })
       });
 
 </script>

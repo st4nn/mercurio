@@ -1522,3 +1522,83 @@ function reportes_ProyectosListosParaFacturar()
   $("#btnListosParaFacturar_Actualizar").trigger('click');
 }
 
+
+
+
+function modalCrearZona(callbackOk, callbackError, callbackUpdate)
+{
+  if (callbackOk === undefined)   {    callbackOk = function(){};  }
+  if (callbackError === undefined)   {    callbackError = function(){};  }
+  if (callbackUpdate === undefined)   {    callbackUpdate = function(){};  }
+
+  if ($("#cntCrearZona").length == 0)
+  {
+    var tds = "";
+    tds += '<div class="modal fade" id="cntCrearZona" aria-hidden="false" aria-labelledby="cntCrearZona_Label" role="dialog" tabindex="-1">';
+        tds += '<div class="modal-dialog">';
+          tds += '<form id="frmModalCrearZona" class="modal-content">';
+            tds += '<div class="modal-header">';
+              tds += '<button type="button" class="close" data-dismiss="modal" aria-label="Close">';
+                tds += '<span aria-hidden="true">×</span>';
+              tds += '</button>';
+              tds += '<h4 class="modal-title">Crear Zona</h4>';
+            tds += '</div>';
+            tds += '<div class="modal-body">';
+              tds += '<div class="row">';
+                tds += '<div class="col-sm-12 form-group">';
+                  tds += '<label for="txtCrearZona_Nombre" class="form-label">Nombre</label>';
+                  tds += '<input id="txtCrearZona_Nombre" type="text" class="form-control" placeholder="Nombre" required>';
+                tds += '</div>';
+                tds += '<div class="col-sm-12 pull-right">';
+                  tds += '<button class="btn btn-success btn-outline" type="submit">Crear</button>';
+                  tds += '<button class="btn btn-danger btn-outline margin-left-20" data-dismiss="modal" type="button">Cancelar</button>';
+                tds += '</div>';
+              tds += '</div>';
+            tds += '</div>';
+          tds += '</form>';
+        tds += '</div>';
+      tds += '</div>';
+    
+    $("body").append(tds);
+
+    $("#frmModalCrearZona").on("submit", function(evento)
+    {
+      evento.preventDefault();
+      if ($("#txtCrearZona_Nombre").val() == "")
+      {
+        Mensaje("Error", "No es posible crear una Zona sin Nombre");
+      } else
+      {
+        $.post('../server/php/proyecto/modals/CrearZona.php', 
+        {
+          Nombre : $("#txtCrearZona_Nombre").val(),
+          Usuario : Usuario.id
+        }, function(data, textStatus, xhr) 
+        {
+          if (data['Error'] != "")
+          {
+            Mensaje("Error", data['Error'], 'danger');
+            callbackError();
+          } else
+          {
+            $("#cntCrearZona").modal("hide");
+            if (data['id'] >= 0)
+            {
+              callbackOk(data['id']);
+              Mensaje("Ok", "La Zona ha sido ingresada");
+            } else
+            {
+              callbackUpdate();                
+            }
+          }
+        }, "json").fail(function()
+        {
+          Mensaje("Error", "No hay conexión con el servidor");
+        });        
+      }
+    });
+  }
+
+  $("#txtCrearZona_Nombre").val("");
+  $("#cntCrearZona").modal("show");
+}

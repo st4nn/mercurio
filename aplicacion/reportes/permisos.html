@@ -32,6 +32,7 @@
                 <th>Responsable</th>
                 <th>Fecha Recepción</th>
                 <th>Fecha Prevista de Entrega</th>
+                <th>Codigo</th>
                 <th>Nombre</th>
                 <th>Descripción</th>
                 <th>Estado</th>
@@ -68,11 +69,12 @@
               $.each(data, function(index, val) 
               {
                  tds += '<tr>';
-                  tds += '<td><a class="lnkReporte_Permisos_AbrirFicha" href="#">' + val.id + '</a></td>';
+                  tds += '<td><a class="lnkReporte_Permisos_AbrirFicha" href="#" Prefijo="' + val.IdProyecto + '">' + val.id + '</a></td>';
                   tds += '<td>' + val.Zona + '</td>';
                   tds += '<td>' + val.Responsable + '</td>';
                   tds += '<td>' + val.fechaRecepcion + '</td>';
                   tds += '<td>' + val.fechaPrevEntrega + '</td>';
+                  tds += '<td>' + val.Codigo + '</td>';
                   tds += '<td>' + val.Nombre + '</td>';
                   tds += '<td>' + val.Descripcion+ '</td>';
                   tds += '<td>' + val.Estado + '</td>';
@@ -87,11 +89,160 @@
 
         $(document).delegate('.lnkReporte_Permisos_AbrirFicha', 'click', function(evento) 
         {
+          var fila = $(this).parent("td").parent("tr").find("td");
+          var Prefijo = $(fila[0]).find("a").attr('Prefijo');
+          var idProyecto = $(fila[0]).find("a").text();
           cargarModulo("reportes/fichaPermiso.html", "Ficha OT", function()
           {
+            $("#txtFichaPermiso_Prefijo").val(Prefijo);
+            $("#lblFichaPermiso_id").text(idProyecto);
+            $("#lblFichaPermiso_Zona").text($(fila[1]).text());
+            $("#lblFichaPermiso_Responsable").text($(fila[2]).text());
+            $("#lblFichaPermiso_FechaRecepcion").text($(fila[3]).text());
+            $("#lblFichaPermiso_FechaPrevEntrega").text($(fila[4]).text());
+            $("#lblFichaPermiso_Codigo").text($(fila[5]).text());
+            $("#lblFichaPermiso_Nombre").text($(fila[6]).text());
+            $("#lblFichaPermiso_Descripcion").text($(fila[7]).text());
+            $("#lblFichaPermiso_Estado").text($(fila[8]).text());
 
+            $("#cntFichaPermiso_Archivos_DivArchivo_Listado li").remove();
+
+            $.post('../server/php/proyecto/cargarArchivosPermiso.php', {Usuario : Usuario.id, Prefijo : Prefijo}, function(data, textStatus, xhr) 
+            {
+              if (data != 0)
+              {
+                var tds = "";
+                $.each(data, function(index, val) 
+                {
+                    tds += '<li class="list-group-item">';
+                      tds += '<small><time class="pull-right" datetime="' + val.fechaCargue.replace(' ', 'T') + '">' + tiempoPublicacion(val.fechaCargue) + '</time></small>';
+                      tds += '<br><small><p class="pull-right"><label class="badge badge-sm badge-info">' + val.Proceso + '</label></p></small>';
+                      tds += '<p><a class="hightlight" href="../server/php/' + val.Ruta + '/' + val.Nombre + '" target="_blank">' + val.Nombre + '</a></p>';
+                      tds += '<p>' + val.Observaciones + '</p>';
+                      tds += '<small>Cargado por';
+                        tds += '<a class="hightlight" href="javascript:void(0)">';
+                          tds += '<span>' + val.Usuario + ' </span> <i><small>' + val.fechaCargue + '</small></i>';
+                        tds += '</a>';
+                      tds += '</small>';
+                    tds += '</li>';
+                });
+
+                $("#cntFichaPermiso_Archivos_DivArchivo_Listado").append(tds);
+              }
+            }, 'json');
+
+            $("#cntFichaPermiso_Tableros .panel").remove();
+
+            $.post('../server/php/proyecto/permisos_CargarTableros.php', {Usuario : Usuario.id, idProyecto : idProyecto}, function(data, textStatus, xhr) 
+            {
+              if (data != 0)
+              {
+                $.each(data, function(index, val) 
+                {
+                   fichaPermiso_AgregarTablero(val.id, val.Nombre);
+                });
+
+                $.post('../server/php/proyecto/permisos_CargarTareas.php', {Usuario : Usuario.id, idProyecto : idProyecto}, function(data2, textStatus, xhr) 
+                {
+                  if (data2 != 0)
+                  {
+                    $.each(data2, function(index, val) 
+                    {
+                       fichaPermiso_AgregarTarea(val);
+                    });
+                  }
+                }, 'json');
+              }
+            }, 'json');
           });
         });
+
+        function fichaPermiso_AgregarTablero(id, Nombre)
+        {
+          var cantidad = $("#cntFichaPermiso_Tableros .dd").length;
+          var idConenedorTablero = "1";
+          if (cantidad%3 == 0)
+          {
+            idConenedorTablero = "3";
+          } else
+          {
+            if (cantidad%2 == 0)
+            {
+              idConenedorTablero = "2";
+            } 
+          }
+
+          var tds = "";
+            tds += '<div class="panel panel-bordered panel-dark">';
+              tds += '<div class="panel-heading">';
+                tds += '<h3 class="panel-title"></h3>';
+              tds += '</div>';
+              tds += '<div class="panel-body">';
+                tds += '<p>' + Nombre + '</p>';
+                tds += '<div class="dd" id="cntFichaPermiso_Tablero_' + id+ '" idTablero="' + id + '">';
+                      tds += '<ol class="dd-list cntFichaPermiso_Tablero_ol">';
+                        tds += '<div class="dd-empty"></div>';
+                      tds += '</ol>';
+                  tds += '</div>';
+              tds += '</div>';
+              tds += '<div class="panel-footer">'
+                tds += '<button class="btn btn-success btn-block">Agregar Tarea</button>';
+              tds += '</div>';
+            tds += '</div>';
+
+          $("#cntFichaPermiso_Tableros_" + idConenedorTablero).append(tds)
+          $(".dd[idTablero="+ id + "]").nestable();
+        }
+
+        function fichaPermiso_AgregarTarea(val)
+        {
+          //val = id, idTablero, Nombre, Descripcion, Usuario, fechaVencimiento, Estado, UsuarioCumplimiento, fechaCumplimiento, fechaCargue
+          var tds = "";
+          var Estado = "";
+          var vEstado = '';
+
+          if (val.idEstado == 1)
+          {
+            Estado = "checked";            
+          } else
+          {
+            val.UsuarioCumplimiento = '';
+            val.fechaCumplimiento = '';
+          }
+
+
+
+            tds += '<div id="cntFichaPermiso_Tarea_' + val.id + '" class="dd-item">';
+              tds += '<div class="dd-handle">' + val.Nombre + '</div>';
+              tds += '<div class="dd-content">';
+                tds += '<div class="">';
+                  tds += '<li class="list-group-item">';
+                    tds += '<div class="media">';
+                      tds += '<div class="media-left">';
+                        tds += '<div class="checkbox-custom checkbox-primary">';
+                          tds += '<input type="checkbox" id="chkFichaPermiso_Tarea' + val.id + '" idTarea = "' + val.id + '" checked="' + Estado + '" class="chkFichaPermiso_Tarea">';
+                          tds += '<label for="chkFichaPermiso_Tarea' + val.id + '">';
+                          tds += '</label>';
+                        tds += '</div>';
+                      tds += '</div>';
+                      tds += '<div class="media-body">';
+                        tds += '<h5 class="list-group-item-heading">';
+                          tds += '<small class="pull-right">' + tiempoPublicacion(val.fechaCargue)+ '</small>';
+                          tds += val.UsuarioResponsable;
+                        tds += '</h5>';
+                        tds += '<small>' + val.fechaCargue + '</small><br>';
+                        tds += '<p class="list-group-item-text">' + val.Descripcion + '</p>';
+                        tds += '<a href="#">' + val.UsuarioCumplimiento + '</a> <i><small>' + val.fechaCumplimiento + '</small></i>';
+                      tds += '</div>';
+                    tds += '</div>';
+                  tds += '</li>';
+                tds += '</div>';
+              tds += '</div>';
+            tds += '</div>';
+
+            $("#cntFichaPermiso_Tablero_" + val.idTablero + " .cntFichaPermiso_Tablero_ol").append(tds);
+            $("#cntFichaPermiso_Tablero_" + val.idTablero + " .cntFichaPermiso_Tablero_ol").nestable();
+        }
       });
 
 </script>

@@ -1,12 +1,219 @@
 <div class="row col-sm-12">
-	<div class="col-sm-6">
+	<div class="col-sm-7">
 		<div class="panel panel-primary panel-bordered">
 	      <div class="panel-heading">
 	        <h3 class="panel-title">Información General</h3>
 	        <div class="panel-actions">
-	          
+				
+	        </div>
+	      </div>
+	      <div class="panel-body">
+	      	<input type="hidden" id="txtFichaPermiso_Prefijo">
+	      	<div class="widget widget-shadow">
+	            <table class="table margin-bottom-0">
+	              <tbody>
+	              	<tr>
+	                  <td>Consecutivo</td>
+	                  <td><h5 id="lblFichaPermiso_id"></h5></td>
+	                </tr>
+	                <tr>
+	                  <td>Zona</td>
+	                  <td><h5 id="lblFichaPermiso_Zona"></h5></td>
+	                </tr>
+	                <tr>
+	                  <td>Responsable</td>
+	                  <td><h5 id="lblFichaPermiso_Responsable"></h5></td>
+	                </tr>
+	                <tr>
+	                  <td>Fecha Recepción</td>
+	                  <td><h5 id="lblFichaPermiso_FechaRecepcion"></h5></td>
+	                </tr>
+	                <tr>
+	                  <td>Fecha Prevista de Entrega</td>
+	                  <td><h5 id="lblFichaPermiso_FechaPrevEntrega"></h5></td>
+	                </tr>
+	                <tr>
+	                  <td>Codigo</td>
+	                  <td><h5 id="lblFichaPermiso_Codigo"></h5></td>
+	                </tr>
+	                <tr>
+	                  <td>Nombre</td>
+	                  <td><h5 id="lblFichaPermiso_Nombre"></h5></td>
+	                </tr>
+	                <tr>
+	                  <td>Descripción</td>
+	                  <td><h5 id="lblFichaPermiso_Descripcion"></h5></td>
+	                </tr>
+	                <tr>
+	                  <td>Estado</td>
+	                  <td><h5 id="lblFichaPermiso_Estado"></h5></td>
+	                </tr>
+	              </tbody>
+	            </table>
+	          </div>
+	      </div>
+	    </div>
+
+		<div class="panel panel-primary panel-bordered">
+	      <div class="panel-heading">
+	        <h3 class="panel-title"> Crear Tablero</h3>
+	        <div class="panel-actions">
+	        	<button id="btnFichaPermiso_CrearTablero_reset" type="button" class="btn btn-floating btn-danger btn-sm"><i class="icon wb-close" aria-hidden="true"></i></button>
+	        </div>
+	      </div>
+	        <form id="frmFichaPermiso_CrearTablero" class="form-horizontal">
+		      	<div class="panel-body">
+		          	<div class="form-group">
+		              <label class="col-sm-3 control-label">Nombre: </label>
+		              <div class="col-sm-9">
+		                  <div class="input-group">
+		                    <input id="txtFichaPermiso_CrearTablero_Nombre" class="form-control">
+		                    <span class="input-group-addon"><i class="icon wb-dashboard"></i></span>
+		                  </div>
+		              </div>
+		            </div>
+		            <div class="form-group">
+		              <label class="col-sm-3 control-label">ANS a Cumplir: </label>
+		              <div class="col-sm-9">
+		                  <div class="input-group">
+		                    <select id="txtFichaPermiso_CrearTablero_Ans" class="form-control">
+		                    	<option value="1">Ninguno</option>
+		                    	<option value="2">El Primero</option>
+		                    	<option value="3">El Segundo</option>
+		                    </select>
+		                    <span class="input-group-addon"><i class="icon wb-stats-bars"></i></span>
+		                  </div>
+		              </div>
+		            </div>
+		        </div>
+		        <div class="panel-footer text-right">
+		        	<button class="btn btn-success" type="submit"><i class="icon fa-floppy-o"></i> Guardar</button>	
+		        </div>
+		    </form>
+		</div>
+	</div>
+	<div class="col-sm-5">
+		<div class="panel panel-primary panel-bordered">
+	      <div class="panel-heading">
+	        <h3 class="panel-title">Estado</h3>
+	      </div>
+	      <div class="panel-body">
+	      	<div class="form-group">
+	          <div class="input-group input-group-file">
+	            <select id="txtFichaPermiso_Estado" type="text" class="form-control guardar">
+	            </select>
+	            <span class="input-group-btn">
+	              <span id="btnFichaProyecto_ActualizarEstado" class="btn btn-success">
+	                Actualizar
+	                <i class="icon wb-refresh" aria-hidden="true"></i>
+	              </span>
+	            </span>
+	          </div>
 	        </div>
 	      </div>
 	    </div>
+
+		<div class="panel">
+			<div class="panel-body">
+				<div id="cntFichaPermiso_Archivos"></div>
+			</div>
+		</div>
+		
+		<!--
+		<div class="panel panel-primary panel-bordered">
+	      <div class="panel-heading">
+	        <h3 class="panel-title"><i class="icon wb-chat-text" aria-hidden="true"></i> Mensajes</h3>
+	        <div class="panel-actions">
+	          <button type="button" class="btn btn-floating btn-success btn-sm"><i class="icon wb-refresh" aria-hidden="true"></i></button>
+	        </div>
+	      </div>
+	      <div class="panel-body">
+	      	
+	      </div>
+	      <div class="panel-footer">
+	          <form>
+	            <div class="input-group">
+	              <input type="text" class="form-control" placeholder="Mensaje...">
+	              <span class="input-group-btn">
+	                <button class="btn btn-primary" type="button">Enviar</button>
+	              </span>
+	            </div>
+	          </form>
+	        </div>
+	    </div>
+	    -->
 	</div>
 </div>
+
+<div class="row col-sm-12">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+	        <h1 class="panel-title text-center">TABLEROS</h1>
+	        <div class="panel-actions">
+	          <button type="button" class="btn btn-floating btn-success btn-sm"><i class="icon wb-refresh" aria-hidden="true"></i></button>
+	        </div>
+	    </div>
+	    <div id="cntFichaPermiso_Tableros" class="panel-body bg-blue-200 padding-top-15">
+	    	<div id="cntFichaPermiso_Tableros_1" class="col-sm-4">
+	        </div>
+
+	        <div id="cntFichaPermiso_Tableros_2" class="col-sm-4">
+	        </div>
+
+	        <div id="cntFichaPermiso_Tableros_3" class="col-sm-4">
+	        </div>
+	    </div>
+	    <div class="panel-footer">
+	    	
+	    </div>
+	</div>
+
+</div>
+
+
+<script>
+	jQuery(document).ready(function() 
+	{
+		$("#cntFichaPermiso_Archivos").iniciarObjArchivos({objPrefijo : $("#txtFichaPermiso_Prefijo"), Proceso: "Ficha Archivos", Usuario: Usuario.id});
+
+		$("#btnFichaPermiso_CrearTablero_reset").on("click", function(evento)
+			{
+				evento.preventDefault();
+
+				$("#frmFichaPermiso_CrearTablero")[0].reset();
+			});
+
+		$("#frmFichaPermiso_CrearTablero").on("submit", function(evento)
+			{
+				evento.preventDefault();
+
+				if ($("#txtFichaPermiso_CrearTablero_Nombre").val() != "")
+				{
+					$.post('../server/php/proyecto/permiso_CrearTablero.php', 
+						{
+							Usuario : Usuario.id, 
+							Nombre : $("#txtFichaPermiso_CrearTablero_Nombre").val(), 
+							Ans : $("#txtFichaPermiso_CrearTablero_Ans").val(), 
+							idProyecto : $("#lblFichaPermiso_id").text()
+						}, 
+						function(data, textStatus, xhr) 
+						{
+							if (data.Error != "")
+							{
+								Mensaje("Error", data.Error, 'danger');
+							} else
+							{
+								if (data.id > 0)
+								{
+									fichaPermiso_AgregarTablero(data.id, $("#txtFichaPermiso_CrearTablero_Nombre").val());
+									$("#txtFichaPermiso_CrearTablero_Nombre").val("");
+									Mensaje("Hey", "Tablero creado", "success");
+								}
+							}
+						}, 'json');
+				}
+			});
+
+		$(".dd").nestable();
+	});
+</script>
